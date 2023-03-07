@@ -1,0 +1,296 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1394px;
+  }
+}
+
+p {
+  font-size: 18px;
+}
+
+span {
+  font-size: 23px;
+  font-weight: 900;
+}
+
+#headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#presentationHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+#headerBarre {
+  width: 500px;
+  height: 120px;
+  margin-top: 20px;
+  background: linear-gradient(217deg, rgba(46, 31, 157, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(10, 229, 222, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(28, 3, 254), rgba(0, 0, 255, 0) 70.71%);
+}
+
+#description {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 5px 40px 5px;
+  font-size: 27px;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: "Dancing", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: "Zeyada", cursive;
+  font-size: 36px;
+  margin: 25px 50px;
+  width: 20%;
+}
+
+h3 {
+  font-size: 23px;
+  text-align: center;
+  margin: 20px 0px;
+  color: rgb(64, 179, 224);
+}
+
+h4 {
+  font-size: 26px;
+  text-align: center;
+  color: rgb(30, 179, 164);
+}
+
+h5 {
+  font-size: 25px;
+}
+
+#img_header {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.navBar {
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+  padding-bottom: 30px;
+}
+
+.barre {
+  width: 50%;
+  height: 15px;
+  background: linear-gradient(217deg, rgba(46, 31, 157, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(10, 229, 222, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(28, 3, 254), rgba(0, 0, 255, 0) 70.71%);
+  background-size: 400% 400%;
+  margin: auto;
+  margin-top: 20px;
+  animation: changeColor 10s ease-in-out infinite;
+}
+
+.separate_barre {
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23A5AB);
+  background-size: 400% 400%;
+  margin: auto;
+  margin: 20px 0px;
+  animation: changeColor 10s ease-in-out infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+#presentation {
+  display: flex;
+  flex-direction: column;
+}
+
+#mainName {
+  display: flex;
+  flex-direction: row;
+}
+
+#mainPresentation {
+  margin: 10px 5px 40px 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+#autres_formations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#skilleos {
+  margin-right: 20px;
+  width: 35%;
+  text-align: center;
+}
+
+#autres_competences {
+  width: 60%;
+  margin-left: 200px;
+}
+
+.imgTechno {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+#technoList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.categoryTechnoColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.categoryTechno {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projectSingle {
+  width: 500px;
+  height: 500px;
+  padding-left: 20px;
+  text-align: center;
+  border: 2px solid #0af1de;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.projectImg {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin: 10px 0px;
+}
+
+button {
+  padding: 5px;
+  margin: 5px;
+}
+button:hover {
+  color: #000;
+  background-color: turquoise;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+
+.description_button {
+  margin-top: 15px;
+}
+
+.project {
+  text-align: left;
+  height: 150px;
+  overflow-y: scroll;
+  padding-right: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.imgLangage {
+  width: 50px;
+  height: 50px;
+}
+
+.langageList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgInterest {
+  width: 50px;
+  height: 50px;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

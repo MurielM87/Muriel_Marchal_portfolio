@@ -1,0 +1,30 @@
+#presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+#mainName {
+    display: flex;
+    flex-direction: row;
+}
+
+#mainPresentation {
+    margin: 10px 5px 40px 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+#autres_formations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#skilleos {
+    margin-right: 20px;
+    width: 35%;
+    text-align: center;
+}
+#autres_competences {
+    width: 60%;
+    margin-left: 200px;
+}

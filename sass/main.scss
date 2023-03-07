@@ -1,0 +1,15 @@
+@import "utils/responsive.scss";
+
+@import "base/normalize.scss";
+@import "base/body.scss";
+
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+@import "components/barre.scss";
+
+@import "pages/presentation.scss";
+@import "pages/technologies.scss";
+@import "pages/projects.scss";
+@import "pages/langages.scss";
+@import "pages/interest.scss";

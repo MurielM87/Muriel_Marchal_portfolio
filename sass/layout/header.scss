@@ -1,0 +1,72 @@
+#headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#presentationHeader {
+    display: flex;
+    flex-direction: row;
+}
+#headerBarre {
+    width: 500px;
+    height: 120px;
+    margin-top : 20px;
+    background: linear-gradient(217deg, rgba(46, 31, 157, 0.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(10, 229, 222, 0.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgb(28, 3, 254), rgba(0,0,255,0) 70.71%);
+}
+#description {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5px 40px 5px;
+    font-size: 27px;
+}
+#name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+h1 {
+    font-size : 25px;
+    font-family: 'Dancing', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: 'Zeyada', cursive;
+    font-size: 36px;
+    margin: 25px 50px;
+    width: 20%;
+}
+
+h3 {
+    font-size: 23px;
+    text-align: center;
+    margin: 20px 0px;
+    color: rgb(64, 179, 224);
+}
+h4 {
+    font-size: 26px;
+    text-align: center;
+    color: rgb(30, 179, 164);
+}
+h5 {
+    font-size: 25px;
+}
+
+#img_header {
+    height:100px;
+    width: 100px;
+    object-fit: contain;
+    margin: 20px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.navBar {
+    font-size: 20px;
+}

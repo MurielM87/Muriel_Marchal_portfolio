@@ -1,0 +1,28 @@
+.imgTechno {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+#technoList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.categoryTechnoColumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.categoryTechno {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 20px;
+}
