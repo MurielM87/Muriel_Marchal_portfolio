@@ -26,22 +26,39 @@ span {
   font-weight: 900;
 }
 
+#img_header {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  margin: auto;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1000px) {
+  #img_header {
+    margin: 20px;
+  }
+}
+
 #headerContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+}
+@media screen and (min-width: 1000px) {
+  #headerContainer {
+    flex-direction: row;
+    margin-left: 10px;
+  }
 }
 
 #presentationHeader {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-
-#headerBarre {
-  width: 500px;
-  height: 120px;
-  margin-top: 20px;
-  background: linear-gradient(217deg, rgba(46, 31, 157, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(10, 229, 222, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(28, 3, 254), rgba(0, 0, 255, 0) 70.71%);
+@media screen and (min-width: 1000px) {
+  #presentationHeader {
+    flex-direction: row;
+  }
 }
 
 #description {
@@ -66,8 +83,15 @@ h1 {
 h2 {
   font-family: "Zeyada", cursive;
   font-size: 36px;
-  margin: 25px 50px;
-  width: 20%;
+  text-align: center;
+  margin: 10px;
+}
+@media screen and (min-width: 1000px) {
+  h2 {
+    margin: 25px 50px;
+    width: 20%;
+    text-align: left;
+  }
 }
 
 h3 {
@@ -85,13 +109,6 @@ h4 {
 
 h5 {
   font-size: 25px;
-}
-
-#img_header {
-  height: 100px;
-  width: 100px;
-  object-fit: contain;
-  margin: 20px;
 }
 
 li {
@@ -115,13 +132,19 @@ footer {
 }
 
 .barre {
-  width: 50%;
-  height: 15px;
+  width: 70%;
+  height: 10px;
   background: linear-gradient(217deg, rgba(46, 31, 157, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(10, 229, 222, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(28, 3, 254), rgba(0, 0, 255, 0) 70.71%);
   background-size: 400% 400%;
   margin: auto;
   margin-top: 20px;
   animation: changeColor 10s ease-in-out infinite;
+}
+@media screen and (min-width: 1000px) {
+  .barre {
+    width: 50%;
+    height: 15px;
+  }
 }
 
 .separate_barre {
@@ -148,11 +171,17 @@ footer {
 #presentation {
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 
 #mainName {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  #mainName {
+    flex-direction: row;
+  }
 }
 
 #mainPresentation {
@@ -164,19 +193,35 @@ footer {
 
 #autres_formations {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  #autres_formations {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 #skilleos {
-  margin-right: 20px;
-  width: 35%;
+  width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  #skilleos {
+    margin-right: 20px;
+    width: 35% px;
+  }
 }
 
 #autres_competences {
-  width: 60%;
-  margin-left: 200px;
+  width: 100%;
+  line-height: 20px;
+}
+@media screen and (min-width: 1000px) {
+  #autres_competences {
+    width: 60%;
+    margin-left: 200px;
+  }
 }
 
 .imgTechno {
@@ -194,13 +239,24 @@ footer {
 #category {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+@media screen and (min-width: 1000px) {
+  #category {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .categoryTechnoColumn {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .categoryTechnoColumn {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .categoryTechno {
@@ -272,25 +328,51 @@ a:hover {
 }
 
 .imgLangage {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .imgLangage {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .langageList {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .langageList {
+    flex-direction: column;
+  }
 }
 
 .imgInterest {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+@media screen and (min-width: 1000px) {
+  .imgInterest {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#interestCenter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .interest {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
