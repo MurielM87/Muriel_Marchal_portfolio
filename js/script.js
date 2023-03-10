@@ -24,5 +24,3 @@ function showHidePiiquante() {
 function showHideGroupomania() {
     projectGroupomania.classList.toggle("hide");
 }
-
-//carousel projects

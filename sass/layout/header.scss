@@ -1,6 +1,6 @@
 #img_header {
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 250px;
   object-fit: contain;
   margin: auto;
   margin-top: 10px;
@@ -25,7 +25,7 @@
   }
 }
 
-#description {
+.description {
   display: flex;
   flex-direction: row;
   margin: 10px 5px 40px 5px;

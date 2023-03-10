@@ -8,7 +8,9 @@
     flex-direction: row;
     justify-content: space-around;
 }
-
+.fas {
+    font-size: 40px;
+}
 .projectSingle {
     width: 500px;
     height: 500px;
@@ -37,7 +39,7 @@ button {
 a {
     text-decoration: none;
     &:hover {
-    color: #000;
+    color: #0fd1f3;
     }
 }
 

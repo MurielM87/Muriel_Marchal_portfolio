@@ -1,11 +1,11 @@
 .barre {
     width: 70%;
     height: 10px;
-    background: linear-gradient(217deg, rgba(46, 31, 157, 0.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(10, 229, 222, 0.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgb(28, 3, 254), rgba(0,0,255,0) 70.71%);
+    background: linear-gradient(217deg, rgba(46, 31, 157, 0.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(10, 229, 222, 0.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgb(248, 51, 248), rgba(0,0,255,0) 70.71%);
     background-size: 400% 400%;
     margin: auto;
     margin-top: 20px;
-    animation: changeColor 10s ease-in-out infinite;
+    animation: changeColor 5s ease-in-out infinite;
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         width: 50%;  
         height: 15px;
@@ -20,7 +20,7 @@
     background-size: 400% 400%;
     margin: auto;
     margin: 20px 0px;
-    animation: changeColor 10s ease-in-out infinite
+    animation: changeColor 5s ease-in-out infinite
 }
 
 @keyframes changeColor {
