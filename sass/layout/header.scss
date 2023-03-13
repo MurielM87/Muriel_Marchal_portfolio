@@ -1,6 +1,6 @@
 #img_header {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   object-fit: contain;
   margin: auto;
   margin-top: 10px;
@@ -55,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-size: 23px;
+  font-size: 30px;
   text-align: center;
   margin: 20px 0px;
   color: rgb(64, 179, 224);
@@ -64,9 +64,13 @@ h4 {
   font-size: 26px;
   text-align: center;
   color: rgb(30, 179, 164);
+  white-space: normal;
 }
 h5 {
   font-size: 25px;
+  text-align: center;
+  height: 55px;
+  margin-top: 10px;
 }
 
 li {
@@ -79,4 +83,12 @@ li {
 
 .navBar {
   font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+  color: #020c0e;
+  background-color: aqua;
+  }
 }

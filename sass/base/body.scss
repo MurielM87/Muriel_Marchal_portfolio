@@ -1,21 +1,29 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff;
-    background-color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #000;
 }
 
 .container {
-    width: 100%;
-    margin: auto;
-    @media screen and (min-width: 1000px) {
-      width: 1394px;  
-    }
+  width: 100%;
+  margin: auto;
+  @media screen and (min-width: 1000px) {
+    width: 1394px;
   }
+}
 
-p {
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+p,
+div {
   font-size: 18px;
+  color: #fff;
 }
 
 span {
