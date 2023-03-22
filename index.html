@@ -2,442 +2,431 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Labrada&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="style.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/291707f091.js" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/1.jpg">
-    <title>Muriel Marchal, développeuse web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Labrada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="swiper-bundle.min.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <script src="https://kit.fontawesome.com/291707f091.js" crossorigin="anonymous">
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/1.jpg">
+  <title>Muriel Marchal, développeuse web</title>
 </head>
 
 <body>
-    <header class="container">
-        <div id="headerContainer">
-            <div id="presentationHeader">
-                <img src="./assets/ciel_etoile.jpg" alt="" id="img_header">
-                <div id="name">
-                    <h1>Muriel MARCHAL</h1>
-                    <p class="description">Développeuse web</p>
-                    <div class="description">muriel.marchal@hotmail.com</div>
-                </div>
+  <header class="container">
+    <div id="headerContainer">
+      <div id="presentationHeader">
+        <img src="./assets/ciel_etoile.jpg" alt="" id="img_header">
+        <div id="name">
+          <h1>Muriel MARCHAL</h1>
+          <p class="description">Développeuse web</p>
+          <div class="description">muriel.marchal@hotmail.com</div>
+        </div>
+      </div>
+    </div>
+
+    <li>
+      <ul class="navBar"><a href="#presentation">Présentation</a></ul>
+      <ul class="navBar"><a href="#projets">Projets réalisés</a></ul>
+      <ul class="navBar"><a href="#contact">Contact</a></ul>
+    </li>
+    <div class="separate_barre"></div>
+
+  </header>
+
+  <main class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <section id="presentation">
+      <div id="mainName">
+        <h2>Qui je suis ...</h2>
+        <div id="mainPresentation">
+          <div>Je me présente... <span>Muriel Marchal</span></div>
+          <div>développeuse web junior curieuse et créative</div>
+          <p>artiste peintre et sculptrice en grès passionnée</p>
+          <p>Minutieuse, autonome, persévérante, créative et curieuse, j’aime découvrir de nouvelles
+            technologies et créer, je suis disponible pour un poste de développeur web</p>
+          <div><a href="https://www.frontendmentor.io/profile/MurielM87">Membre de Frontend Mentor</a></div>
+          <div>Membre de Coding Game</div>
+        </div>
+      </div>
+      <div class="barre"></div>
+      <div>
+        <div id="technoList">
+          <h3>Mes technologies</h3>
+          <div id="category">
+            <div class="categoryTechnoColumn">
+              <div class="categoryTechno">
+                <h4>Frontend</h4>
+                <li>
+                  <ul><img src="./assets/HTML5_logo.svg.png" alt="HTML" class="imgTechno" /></ul>
+                  <ul><img src="./assets/CSS3_logo.svg.png" alt="CSS" class="imgTechno" /></ul>
+                  <ul><img src="./assets/Sass_Logo.svg.png" alt="SASS" class="imgTechno" /></ul>
+                  <ul><img src="./assets/js-logo.png" alt="JavaScript" class="imgTechno" /></ul>
+                  <ul><img src="./assets/vue.js_logo.png" alt="Vue.js" class="imgTechno" /></ul>
+                </li>
+              </div>
+              <div class="categoryTechno">
+                <h4>Backend</h4>
+                <li>
+                  <ul><img src="./assets/Node.js_logo.svg.png" alt="Node.js" class="imgTechno" />
+                  </ul>
+                  <ul><img src="./assets/expressjs.png" alt="Express" class="imgTechno" /></ul>
+                </li>
+              </div>
             </div>
+            <div class="categoryTechnoColumn">
+              <div class="categoryTechno">
+                <h4>Bases de données</h4>
+                <li>
+                  <ul><img src="./assets/mongoDB.png" alt="MongoDB" class="imgTechno" /></ul>
+                  <ul><img src="./assets/mysql_workbench.jpg" alt="MySQL Workbench" class="imgTechno" />
+                  </ul>
+                </li>
+              </div>
+              <div class="categoryTechno">
+                <h4>locigiels et outils</h4>
+                <li>
+                  <ul><img src="./assets/figma_nom.png" alt="Figma" class="imgTechno" /></ul>
+                  <ul><img src="./assets/vscode-nom.png" alt="VSCode" class="imgTechno" /></ul>
+                  <ul><img src="./assets/GitHub-Logo.png" alt="GitHub" class="imgTechno" /></ul>
+                  <ul><img src="./assets/insomnia.png" alt="Insomnia" class="imgTechno" /></ul>
+                  <ul><img src="./assets/Blender_logo_no_text.svg.png" alt="Blender" class="imgTechno" />
+                  </ul>
+                  <ul><img src="./assets/Epic_Games_logo.svg.png" alt="Epic Game" class="imgTechno" />
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="barre"></div>
+      <div>
+        <div>
+          <h3>2021-2022 : formation de développeur web chez OpenClassroom</h3>
+          <p><span>1er projet</span> mettre en place la veille informationnelle</p>
+          <p><span></a>2e projet</span> Transformer une maquette en site web (HTML-CSS) avec le site
+            d’hébergement de
+            vacances Booki</p>
+          <p><span>3e projet</span> Dynamiser une page web avec des animations CSS (HTML-SASS-GITHUB) avec le
+            site des
+            restaurants Ohmyfood</p>
+          <p><span>4e projet</span> Optimiser un site web existant (SEO) pour le faire passer en tête des
+            résultats
+            google avec le site de l'agence Chouette</p>
+          <div><span>5e projet</span> Construire un site e-commerce (HTML-CSS-JS) avec le site commercial
+            Kanap</div>
+          <p><span>6e projet</span> Construire une API sécurisée pour une application d’avis gastronomiques
+            (Node.js-MongoDB-Express-OWASP)</p>
+          <p><span>7e projet</span> Créer un réseau social d’entreprise (Vue.js-MySQL Workbench)</p>
+        </div>
+        <div id="autres_formations">
+          <div id="skilleos">
+            <h3>Skilleos</h3>
+            <p><span>Javascript</span></p>
+            <p><span>Vue.js 2 & 3</span></p>
+            <p><span>MySQL</span></p>
+            <p><span>Node.js</span></p>
+            <p><span>UX-Design</span></p>
+            <p><span>Nombre d'or et composition</span></p>
+            <h3>VueSchool</h3>
+            <p><span>The Vue.js 3 Masterclass</span></p>
+            <p><span>Vue 3 Composition API</span></p>
+            <p><span>Pinia: The Enjoyable Vue Store</span></p>
+            <p><span>Vue 3 Single File Components</span></p>
+            <p><span>Vue.js + Firebase Realtime Database</span></p>
+            <p><span>TypeScript Fundamentals</span></p>
+          </div>
+          <div>
+            <h3>autres compétences acquises</h3>
+            <div id="autres_competences">
+              <div><span>UX-Design</span> : Initiez-vous au Design Thinking, UX design : découvrez les
+                fondamentaux, Appropriez-vous la
+                démarche UX en pratique, Communiquez et formalisez vos idées par le storytelling, Menez
+                une recherche utilisateur, Appliquez la psychologie au design</div>
+              <div>Allez plus loin pour développer votre <span>créativité</span>, Animez un atelier de
+                créativité, Mise en Page avec In-Design</div>
+              <div>Découvrir la <span>création créative avec Scratch</span>, Développez votre premier jeu
+                vidéo avec l'Unreal Engine 4</div>
+              <div>Comprendre le <span>Big Data</span> à travers les films de cinéma</div>
+              <div>A la découverte d'UNIX (FreeBSD), Managez les droits de vos vidéos sur le web
+                (formation Ina)</div>
+              <div>Découpez et intégrez une maquette</div>
+              <div>Améliorer la visibilité des vidéos en ligne et leur accessibilité grâce au
+                sous-titrage, réussir un live streaming (formation LibCast)</div>
+              <div>Améliorez l'impact de vos présentations, Découvrez les bases de la gestion de projet,
+                Rédigez des écrits professionnels</div>
+            </div>
+          </div>
         </div>
 
-        <li>
-            <ul class="navBar"><a href="#presentation">Présentation</a></ul>
-            <ul class="navBar"><a href="#projets">Projets réalisés</a></ul>
-            <ul class="navBar"><a href="#contact">Contact</a></ul>
+    </section>
+    <div class="barre"></div>
+    <section id="projects">
+      <h2>Mes réalisations</h2>
+      <h3>projets OpenClassroom de la formation de développeur web</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h5>Projet Booki</h5>
+            <img src="./assets/booki.png" alt="page d'accueil Booki">
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/Booki">Code</a></button>
+              <button><a href="murielm87.github.io/Booki/">Page</a></button>
+            </div>
+            <div class="project_description">Deuxième projet : HTML-CSS-Flexbox, intégration d'une maquette</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Projet Ohmyfood</h5>
+            <div>
+              <img src="./assets/ohmyfood_menus.jpg" alt="pages menus Ohmyfood">
+            </div>
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/MurielMarchal_3_10012022">Code</a></button>
+              <button><a href="https://murielm87.github.io/MurielMarchal_3_10012022/">Page</a></button>
+            </div>
+            <div class="project_description">Troisième projet : HTML-SASS-GitHub, animations, transitions, environnement frontend</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Projet la Chouette Agence</h5>
+            <div>
+              <img src="./assets/chouette_agence.png" alt="page d'accueil la chouette agence">
+            </div>
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/la_chouette_agence">Code</a></button>
+              <button><a href="https://murielm87.github.io/la_chouette_agence/">Page</a></button>
+            </div>
+            <div class="project_description">Quatrième projet : SEO, référencement site web, accessibilité, optimisation, écrire du code maintenable</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Projet Kanap</h5>
+            <div>
+              <img src="./assets/kanap.png" alt="page d'accueil Kanap">
+            </div>
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/Kanap">Code</a></button>
+            </div>
+            <div class="project_description">Cinquième projet : JavaScript pour un site de e-commerce à partir des données du backend</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Projet Piiquante</h5>
+            <div>
+              <img src="./assets/piiquante.png" alt="logo Piiquante">
+            </div>
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/P6_API_sauces_piquantes">Code</a></button>
+            </div>
+            <div class="project_description">Sixième projet : CRUD, mise en place du backend avec node.js & de la base de données MongoDB</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Projet Groupomania</h5>
+            <div>
+              <img src="./assets/groupomania.png" alt="logo Groupomania">
+            </div>
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/Groupomania">Code</a></button>
+            </div>
+            <div class="project_description">Septième projet : Frontend : Vue.js & backend : node.js & base de données : MySQL Workbench</div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <h3>Challenges Frontend Mentor</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h5>social-proof-section-master</h5>
+            <img src="./assets/frontend_mentor_c7.jpg" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/social-proof-section-master">Code</a></button>
+              <button><a href="https://murielm87.github.io/social-proof-section-master/">Page</a></button>
+            </div>
+            <div class="description">projet HTML CSS</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>qr-code-component-main</h5>
+            <img src="./assets/frontend_mentor_c4.jpg" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/Frontend_Mentor_Challenge4">Code</a></button>
+              <button><a href="https://murielm87.github.io/Frontend_Mentor_Challenge4/">Page</a></button>
+            </div>
+            <div class="description">projet HTML CSS</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Product preview card component</h5>
+            <img src="./assets/frontend_mentor_c3.jpg" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/Frontend_Mentor_Challenge3">Code</a></button>
+              <button><a href="https://murielm87.github.io/Frontend_Mentor_Challenge3/">Page</a></button>
+            </div>
+            <div class="description">projet HTML CSS</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Chat app CSS illustration</h5>
+            <img src="./assets/frontend_mentor_c2.jpg" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/Frontend_Mentor_Challenge2">Code</a></button>
+              <button><a href="https://murielm87.github.io/Frontend_Mentor_Challenge2/">Page</a></button>
+            </div>
+            <div class="description">projet HTML CSS</div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Results summary component</h5>
+            <img src="./assets/frontend_mentor_c1.jpg" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/Frontend_Mentors_Challenge1">Code</a></button>
+              <button><a href="https://murielm87.github.io/Frontend_Mentors_Challenge1/">Page</a></button>
+            </div>
+            <div class="description">projet HTML CSS</div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <h3>mes autres projets ...</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h5>Cube photos 3D</h5>
+            <img src="./assets/cube_3D.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/cubes_3D">Code</a></button>
+              <button><a href="https://murielm87.github.io/cubes_3D/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Montre digitale</h5>
+            <img src="./assets/digital_clock.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/digital_clock">Code</a></button>
+              <button><a href="https://murielm87.github.io/digital_clock/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Boule liquide</h5>
+            <img src="./assets/boule_liquide.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/boule_liquid_css">Code</a></button>
+              <button><a href="https://murielm87.github.io/boule_liquid_css/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Projet Tout le monde aime Raymond</h5>
+            <img src="./assets/EverybodyLovesRaymond.jpg" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/everybody_loves_raymond">Code</a></button>
+              <button><a href="https://murielm87.github.io/everybody_loves_raymond/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Le jeu du serpent</h5>
+            <img src="./assets/snake_game.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/snake_game">Code</a></button>
+              <button><a href="https://murielm87.github.io/snake_game/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Cube photos 3D en JavaScript</h5>
+            <img src="./assets/cube_3D_js.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/cubes_3D_js">Code</a></button>
+              <button><a href="https://murielm87.github.io/cubes_3D_js/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Galerie photos</h5>
+            <img src="./assets/galerie photos.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/photos_gallerie">Code</a></button>
+              <button><a href="https://murielm87.github.io/photos_gallerie/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>jeu Memory</h5>
+            <img src="./assets/memory_game.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/memory">Code</a></button>
+              <button><a href="https://murielm87.github.io/memory/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Effet Matrix</h5>
+            <img src="./assets/matrix_rain.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/Matrix_effect">Code</a></button>
+              <button><a href="https://murielm87.github.io/Matrix_effect/">Page</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h5>Chronomètre</h5>
+            <img src="./assets/chronometre.png" />
+            <div class="btn_code">
+              <button><a href="https://github.com/MurielM87/chronometre">Code</a></button>
+              <button><a href="https://murielm87.github.io/chronometre/">Page</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <div class="barre"></div>
+    <section>
+      <h2>Langues parlées</h2>
+      <li>
+        <ul class="langageList">Français<img src="./assets/france.jpg" class="imgLangage" /></ul>
+        <ul class="langageList">Anglais<img src="./assets/angleterre.jpg" class="imgLangage" /></ul>
+        <ul class="langageList">Allemand<img src="./assets/allemagne.webp" class="imgLangage" /></ul>
+        <ul class="langageList">Suédois<img src="./assets/suède.jpg" class="imgLangage" /></ul>
+        <ul class="langageList">Danois<img src="./assets/danemark.jpg" class="imgLangage" /></ul>
+        <ul class="langageList">Islandais (lu)<img src="./assets/islande.jpg" class="imgLangage" /></ul>
+      </li>
+    </section>
+
+    <section>
+      <div>
+        <h2>Mes centres d'intérêt</h2>
+        <li id="interestCenter">
+          <ul class="interest"><img src="./assets/modelage.png" alt="modelage en terre" class="imgInterest">modelage en
+            terre</ul>
+          <ul class="interest"><img src="./assets/pinceau.png" alt="peinture à l'huile et à l'acrylique"
+              class="imgInterest">peinture à l'huile et à l'acrylique</ul>
+          <ul class="interest"><img src="./assets/aiguille.jpg" class="imgInterest">tissages en perles</ul>
+          <ul class="interest"><img src="./assets/graphisme.jpg" class="imgInterest">graphisme</ul>
+          <ul class="interest"> <img src="./assets/puzzle.jpg" class="imgInterest">puzzle</ul>
+          <ul class="interest"><img src="./assets/pile_livres.png" class="imgInterest">civilisation
+            amérindienne, same et groenlandaise</ul>
         </li>
-        <div class="separate_barre"></div>
+      </div>
+    </section>
 
-    </header>
+  </main>
 
-    <main class="container">
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-        <section id="presentation">
-            <div id="mainName">
-                <h2>Qui je suis ...</h2>
-                <div id="mainPresentation">
-                    <div>Je me présente... <span>Muriel Marchal</span></div>
-                    <div>développeuse web junior curieuse et créative</div>
-                    <p>artiste peintre et sculptrice en grès passionnée</p>
-                    <p>Minutieuse, autonome, persévérante, créative et curieuse, j’aime découvrir de nouvelles
-                        technologies et créer, je suis disponible pour un poste de développeur web</p>
-                    <div><a href="https://www.frontendmentor.io/profile/MurielM87">Membre de Frontend Mentor</a></div>
-                    <div>Membre de Coding Game</div>
-                </div>
-            </div>
-            <div class="barre"></div>
-            <div>
-                <div id="technoList">
-                    <h3>Mes technologies</h3>
-                    <div id="category">
-                        <div class="categoryTechnoColumn">
-                            <div class="categoryTechno">
-                                <h4>Frontend</h4>
-                                <li>
-                                    <ul><img src="./assets/HTML5_logo.svg.png" alt="HTML" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/CSS3_logo.svg.png" alt="CSS" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/Sass_Logo.svg.png" alt="SASS" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/js-logo.png" alt="JavaScript" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/vue.js_logo.png" alt="Vue.js" class="imgTechno" /></ul>
-                                </li>
-                            </div>
-                            <div class="categoryTechno">
-                                <h4>Backend</h4>
-                                <li>
-                                    <ul><img src="./assets/Node.js_logo.svg.png" alt="Node.js" class="imgTechno" />
-                                    </ul>
-                                    <ul><img src="./assets/expressjs.png" alt="Express" class="imgTechno" /></ul>
-                                </li>
-                            </div>
-                        </div>
-                        <div class="categoryTechnoColumn">
-                            <div class="categoryTechno">
-                                <h4>Bases de données</h4>
-                                <li>
-                                    <ul><img src="./assets/mongoDB.png" alt="MongoDB" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/mysql_workbench.jpg" alt="MySQL Workbench"
-                                            class="imgTechno" />
-                                    </ul>
-                                </li>
-                            </div>
-                            <div class="categoryTechno">
-                                <h4>locigiels et outils</h4>
-                                <li>
-                                    <ul><img src="./assets/figma_nom.png" alt="Figma" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/vscode-nom.png" alt="VSCode" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/GitHub-Logo.png" alt="GitHub" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/insomnia.png" alt="Insomnia" class="imgTechno" /></ul>
-                                    <ul><img src="./assets/Blender_logo_no_text.svg.png" alt="Blender"
-                                            class="imgTechno" />
-                                    </ul>
-                                    <ul><img src="./assets/Epic_Games_logo.svg.png" alt="Epic Game" class="imgTechno" />
-                                    </ul>
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="barre"></div>
-            <div>
-                <div>
-                    <h3>2021-2022 : formation de développeur web chez OpenClassroom</h3>
-                    <p><span>1er projet</span> mettre en place la veille informationnelle</p>
-                    <p><span></a>2e projet</span> Transformer une maquette en site web (HTML-CSS) avec le site
-                        d’hébergement de
-                        vacances Booki</p>
-                    <p><span>3e projet</span> Dynamiser une page web avec des animations CSS (HTML-SASS-GITHUB) avec le
-                        site des
-                        restaurants Ohmyfood</p>
-                    <p><span>4e projet</span> Optimiser un site web existant (SEO) pour le faire passer en tête des
-                        résultats
-                        google avec le site de l'agence Chouette</p>
-                    <div><span>5e projet</span> Construire un site e-commerce (HTML-CSS-JS) avec le site commercial
-                        Kanap</div>
-                    <p><span>6e projet</span> Construire une API sécurisée pour une application d’avis gastronomiques
-                        (Node.js-MongoDB-Express-OWASP)</p>
-                    <p><span>7e projet</span> Créer un réseau social d’entreprise (Vue.js-MySQL Workbench)</p>
-                </div>
-                <div id="autres_formations">
-                    <div id="skilleos">
-                        <h3>Skilleos</h3>
-                        <p><span>Javascript</span></p>
-                        <p><span>Vue.js 2 & 3</span></p>
-                        <p><span>MySQL</span></p>
-                        <p><span>Node.js</span></p>
-                        <p><span>UX-Design</span></p>
-                        <p><span>Nombre d'or et composition</span></p>
-                        <h3>VueSchool</h3>
-                        <p><span>The Vue.js 3 Masterclass</span></p>
-                        <p><span>Vue 3 Composition API</span></p>
-                        <p><span>Pinia: The Enjoyable Vue Store</span></p>
-                        <p><span>Vue 3 Single File Components</span></p>
-                        <p><span>Vue.js + Firebase Realtime Database</span></p>
-                        <p><span>TypeScript Fundamentals</span></p>
-                    </div>
-                    <div>
-                        <h3>autres compétences acquises</h3>
-                        <div id="autres_competences">
-                            <div><span>UX-Design</span> : Initiez-vous au Design Thinking, UX design : découvrez les
-                                fondamentaux, Appropriez-vous la
-                                démarche UX en pratique, Communiquez et formalisez vos idées par le storytelling, Menez
-                                une recherche utilisateur, Appliquez la psychologie au design</div>
-                            <div>Allez plus loin pour développer votre <span>créativité</span>, Animez un atelier de
-                                créativité, Mise en Page avec In-Design</div>
-                            <div>Découvrir la <span>création créative avec Scratch</span>, Développez votre premier jeu
-                                vidéo avec l'Unreal Engine 4</div>
-                            <div>Comprendre le <span>Big Data</span> à travers les films de cinéma</div>
-                            <div>A la découverte d'UNIX (FreeBSD), Managez les droits de vos vidéos sur le web
-                                (formation Ina)</div>
-                            <div>Découpez et intégrez une maquette</div>
-                            <div>Améliorer la visibilité des vidéos en ligne et leur accessibilité grâce au
-                                sous-titrage, réussir un live streaming (formation LibCast)</div>
-                            <div>Améliorez l'impact de vos présentations, Découvrez les bases de la gestion de projet,
-                                Rédigez des écrits professionnels</div>
-                        </div>
-                    </div>
-                </div>
+  <footer id="contact" class="container">
+    <div class="separate_barre"></div>
+    <h5>Muriel Marchal</h5>
+    <p>développeuse web</p>
+    <div>mail : muriel.marchal@hotmail.com</div>
+    <div><a href="https://www.linkedin.com/in/muriel-marchal-80362ba5/">Linked'in :
+        https://www.linkedin.com/in/muriel-marchal-80362ba5/</a></div>
+    <div><a href="https://github.com/MurielM87">GitHub : https://github.com/MurielM87</a></div>
+  </footer>
 
-        </section>
-        <div class="barre"></div>
-        <section id="projects">
-            <h2 class="sectionTitle">Mes réalisations</h2>
-            <div class="wrapper">
-                <h3>Projets OpenClassroom</h3>
-                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
-                    centered-slides="true" space-between="30" grab-cursor="true">
-                    <swiper-slide>
-                        <h5>Projet Booki</h5>
-                        <img src="./assets/booki.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/Booki">Code</a></button>
-                            <button><a href="murielm87.github.io/Booki/">Page</a></button>
-                        </div>
-                        <div class="description">Deuxième projet de la formation de développeur web</div>
-                        <button class="btn_description" onclick="showHideBooki()">Description</button>
-                        <div class="project project_booki hide">HTML-CSS-Flexbox : intégration d'une maquette</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Projet Ohmyfood</h5>
-                        <img src="./assets/ohmyfood_menus.jpg" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/MurielMarchal_3_10012022">Code</a></button>
-                            <button><a href="https://murielm87.github.io/MurielMarchal_3_10012022/">Page</a></button>
-                        </div>
-                        <div class="description">Troisième projet de la formation de développeur web</div>
-                        <button class="btn_description" onclick="showHideOhmyfood()">Description</button>
-                        <div class="project project_ohmyfood hide">HTML-SASS-GitHub : animations, transitions, environnement frontend</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Projet la Chouette Agence</h5>
-                        <img src="./assets/chouette_agence.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/la_chouette_agence">Code</a></button>
-                            <button><a href="https://murielm87.github.io/la_chouette_agence/">Page</a></button>
-                        </div>
-                        <div class="description">Quatrième projet de la formation de développeur web</div>
-                        <button class="btn_description" onclick="showHideChouette()">Description</button>
-                        <div class="project project_chouette hide">SEO, référencement site web, accessibilité, optimisation, écrire du code maintenable</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Projet Kanap</h5>
-                        <img src="./assets/kanap.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/Kanap">Code</a></button>
-                        </div>
-                        <div class="description">Cinquième projet de la formation de développeur web</div>
-                        <button class="btn_description" onclick="showHideKanap()">Description</button>
-                        <div class="project project_kanap hide">Javascript pour un site de e-commerce à partir des données du backend</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Projet Sauces Piquantes</h5>
-                        <img src="./assets/piiquante.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/P6_API_sauces_piquantes">Code</a></button>
-                        </div>
-                        <div class="description">Sixième projet de la formation de développeur web</div>
-                        <button class="btn_description" onclick="showHidePiiquante()">Description</button>
-                        <div class="project project_piiquante hide">CRUD, mise en place du backend avec node.js & de la base de données MongoDB</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Projet Groupomania</h5>
-                        <img src="./assets/groupomania.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/Groupomania">Code</a></button>
-                        </div>
-                        <div class="description">Septième projet de la formation de développeur web</div>
-                        <button class="btn_description" onclick="showHideGroupomania()">Description</button>
-                        <div class="project project_groupomania hide">Frontend : Vue.js & backend : node.js & base de données : MySQL Workbench</div>
-                    </swiper-slide>
-                </swiper-container>
+  <script src="./js/script.js" type="text/javascript"></script>
+  <script src="./js/btn_top.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-                <div class="modal_container">
-                    <div class="overlay modal_trigger"></div>
-                    <div class="modal">
-                        <button class="close_modal modal_trigger">X</button>
-                        <h4>Description</h4>
-                        <p>contenu du projet 6</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <h3>Challenges Frontend Mentor</h3>
-                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
-                    centered-slides="true" space-between="30" grab-cursor="true">
-                    <swiper-slide>
-                        <h5>social-proof-section-master</h5>
-                        <img src="./assets/frontend_mentor_c7.jpg" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/social-proof-section-master">Code</a></button>
-                            <button><a href="https://murielm87.github.io/social-proof-section-master/">Page</a></button>
-                        </div>
-                        <div class="description">projet HTML CSS</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>qr-code-component-main</h5>
-                        <img src="./assets/frontend_mentor_c4.jpg" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/Frontend_Mentor_Challenge4">Code</a></button>
-                            <button><a href="https://murielm87.github.io/Frontend_Mentor_Challenge4/">Page</a></button>
-                        </div>
-                        <div class="description">projet HTML CSS</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Product preview card component</h5>
-                        <img src="./assets/frontend_mentor_c3.jpg" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/Frontend_Mentor_Challenge3">Code</a></button>
-                            <button><a href="https://murielm87.github.io/Frontend_Mentor_Challenge3/">Page</a></button>
-                        </div>
-                        <div class="description">projet HTML CSS</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Chat app CSS illustration</h5>
-                        <img src="./assets/frontend_mentor_c2.jpg" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/Frontend_Mentor_Challenge2">Code</a></button>
-                            <button><a href="https://murielm87.github.io/Frontend_Mentor_Challenge2/">Page</a></button>
-                        </div>
-                        <div class="description">projet HTML CSS</div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Results summary component</h5>
-                        <img src="./assets/frontend_mentor_c1.jpg" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/Frontend_Mentors_Challenge1">Code</a></button>
-                            <button><a href="https://murielm87.github.io/Frontend_Mentors_Challenge1/">Page</a></button>
-                        </div>
-                        <div class="description">projet HTML CSS</div>
-                    </swiper-slide>
-                </swiper-container>
-            </div>
-
-            <div class="wrapper">
-                <h3>autres projets</h3>
-                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
-                    centered-slides="true" space-between="30" grab-cursor="true">
-                    <swiper-slide>
-                        <h5>Cube photos 3D</h5>
-                        <img src="./assets/cube_3D.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/cubes_3D">Code</a></button>
-                            <button><a href="https://murielm87.github.io/cubes_3D/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Montre digitale</h5>
-                        <img src="./assets/digital_clock.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/digital_clock">Code</a></button>
-                            <button><a href="https://murielm87.github.io/digital_clock/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Boule liquide</h5>
-                        <img src="./assets/boule_liquide.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/boule_liquid_css">Code</a></button>
-                            <button><a href="https://murielm87.github.io/boule_liquid_css/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Projet Tout le monde aime Raymond</h5>
-                        <img src="./assets/EverybodyLovesRaymond.jpg" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/everybody_loves_raymond">Code</a></button>
-                            <button><a href="https://murielm87.github.io/everybody_loves_raymond/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Le jeu du serpent</h5>
-                        <img src="./assets/snake_game.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/snake_game">Code</a></button>
-                            <button><a href="https://murielm87.github.io/snake_game/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Cube photos 3D en JavaScript</h5>
-                        <img src="./assets/cube_3D_js.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/cubes_3D_js">Code</a></button>
-                            <button><a href="https://murielm87.github.io/cubes_3D_js/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Galerie photos</h5>
-                        <img src="./assets/galerie photos.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/photos_gallerie">Code</a></button>
-                            <button><a href="https://murielm87.github.io/photos_gallerie/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>jeu Memory</h5>
-                        <img src="./assets/memory_game.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/memory">Code</a></button>
-                            <button><a href="https://murielm87.github.io/memory/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Effet Matrix</h5>
-                        <img src="./assets/matrix_rain.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/Matrix_effect">Code</a></button>
-                            <button><a href="https://murielm87.github.io/Matrix_effect/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h5>Chronomètre</h5>
-                        <img src="./assets/chronometre.png" />
-                        <div class="btn_code">
-                            <button><a href="https://github.com/MurielM87/chronometre">Code</a></button>
-                            <button><a href="https://murielm87.github.io/chronometre/">Page</a></button>
-                        </div>
-                    </swiper-slide>
-                </swiper-container>
-            </div>
-
-            </div>
-        </section>
-        <div class="barre"></div>
-        <section>
-            <h2>Langues parlées</h2>
-            <li>
-                <ul class="langageList">Français<img src="./assets/france.jpg" class="imgLangage" /></ul>
-                <ul class="langageList">Anglais<img src="./assets/angleterre.jpg" class="imgLangage" /></ul>
-                <ul class="langageList">Allemand<img src="./assets/allemagne.webp" class="imgLangage" /></ul>
-                <ul class="langageList">Suédois<img src="./assets/suède.jpg" class="imgLangage" /></ul>
-                <ul class="langageList">Danois<img src="./assets/danemark.jpg" class="imgLangage" /></ul>
-                <ul class="langageList">Islandais (lu)<img src="./assets/islande.jpg" class="imgLangage" /></ul>
-            </li>
-        </section>
-
-        <section>
-            <div>
-                <h2>Mes centres d'intérêt</h2>
-                <li id="interestCenter">
-                    <ul class="interest"><img src="./assets/modelage.png" alt="modelage en terre"
-                            class="imgInterest">modelage en terre</ul>
-                    <ul class="interest"><img src="./assets/pinceau.png" alt="peinture à l'huile et à l'acrylique"
-                            class="imgInterest">peinture à l'huile et à l'acrylique</ul>
-                    <ul class="interest"><img src="./assets/aiguille.jpg" class="imgInterest">tissages en perles</ul>
-                    <ul class="interest"><img src="./assets/graphisme.jpg" class="imgInterest">graphisme</ul>
-                    <ul class="interest"> <img src="./assets/puzzle.jpg" class="imgInterest">puzzle</ul>
-                    <ul class="interest"><img src="./assets/pile_livres.png" class="imgInterest">civilisation
-                        amérindienne, same et groenlandaise</ul>
-                </li>
-            </div>
-        </section>
-
-    </main>
-
-    <footer id="contact" class="container">
-        <div class="separate_barre"></div>
-        <h5>Muriel Marchal</h5>
-        <p>développeuse web</p>
-        <div>mail : muriel.marchal@hotmail.com</div>
-        <div><a href="https://www.linkedin.com/in/muriel-marchal-80362ba5/">Linked'in :
-                https://www.linkedin.com/in/muriel-marchal-80362ba5/</a></div>
-        <div><a href="https://github.com/MurielM87">GitHub : https://github.com/MurielM87</a></div>
-    </footer>
-
-    <script src="./js/script.js" type="text/javascript"></script>
-    <script src="./js/btn_top.js" type="text/javascript"></script>
 
 </body>
 
