@@ -28,8 +28,13 @@
     visibility: visible;
 }
 li {    
+    display: flex;
+    flex-direction: column;
     padding-bottom: 0;
     margin-bottom: 0;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        flex-direction: row;
+    }
 }
 ol {
     margin: 10px;
