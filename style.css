@@ -280,6 +280,50 @@ footer {
   line-height: 1.4;
 }
 
+.skilleos_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #3c3737;
+  color: #fff;
+  text-align: left;
+  border-radius: 10px;
+  padding: 5px 0;
+  top: -5px;
+  left: 105%;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip_title {
+  color: red;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+li {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+ol {
+  margin: 10px;
+  width: 100px;
+  text-align: center;
+}
+
 #presentation {
   display: flex;
   flex-direction: column;
