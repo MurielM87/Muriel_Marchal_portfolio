@@ -514,4 +514,155 @@ button {
   margin-top: 10px;
 }
 
+#animation_header {
+  transform-style: preserve-3d;
+  perspective: 800px;
+  pointer-events: none;
+}
+#animation_header .primary {
+  border-bottom: 5px solid rgb(23, 237, 216);
+}
+#animation_header .secondary {
+  border-bottom: 6px solid rgb(2, 167, 250);
+}
+#animation_header .third {
+  border-bottom: 7px solid rgb(15, 85, 175);
+}
+#animation_header .arc {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  margin: 30%;
+  border-radius: 50%;
+}
+@media (min-width: 767px) and (max-width: 1000px) {
+  #animation_header .arc {
+    width: 200px;
+    height: 200px;
+    margin: 20% 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #animation_header .arc {
+    margin: 7% 40%;
+  }
+}
+#animation_header .arc:nth-child(1) {
+  -moz-animation-name: rotate1;
+  -webkit-animation-name: rotate1;
+  animation-name: rotate1;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+#animation_header .arc:nth-child(2) {
+  -moz-animation-name: rotate2;
+  -webkit-animation-name: rotate2;
+  animation-name: rotate2;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+#animation_header .arc:nth-child(3) {
+  -moz-animation-name: rotate3;
+  -webkit-animation-name: rotate3;
+  animation-name: rotate3;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+#animation_header .arc:nth-child(1) {
+  -webkit-animation-delay: -0.8s;
+  -moz-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+#animation_header .arc:nth-child(2) {
+  -webkit-animation-delay: -0.4s;
+  -moz-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+#animation_header .arc:nth-child(3) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+@keyframes rotate1 {
+  from {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(1turn);
+    opacity: 0;
+  }
+}
+@keyframes rotate2 {
+  from {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(1turn);
+    opacity: 0;
+  }
+}
+@keyframes rotate3 {
+  from {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn);
+    opacity: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
