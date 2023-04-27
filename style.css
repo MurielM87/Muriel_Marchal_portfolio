@@ -520,6 +520,7 @@ button {
   align-items: center;
   margin-top: 10px;
   margin-left: 10px;
+  width: 15%;
 }
 
 #animation_header {
