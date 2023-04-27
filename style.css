@@ -72,8 +72,14 @@ span {
 .description {
   display: flex;
   flex-direction: row;
-  margin: 10px 5px 40px 5px;
-  font-size: 27px;
+  font-size: 20px;
+  margin-left: -20px;
+}
+@media screen and (min-width: 1000px) {
+  .description {
+    font-size: 27px;
+    margin: 10px 5px 40px 5px;
+  }
 }
 
 #name {
@@ -123,11 +129,11 @@ h5 {
   margin-top: 10px;
 }
 
-li {
+header li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 15px;
+  margin: 15px 0px;
   padding-bottom: 15px;
 }
 
@@ -504,6 +510,7 @@ button {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -512,9 +519,11 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 #animation_header {
+  margin-left: 150px;
   transform-style: preserve-3d;
   perspective: 800px;
   pointer-events: none;
@@ -535,28 +544,21 @@ button {
   left: 0;
   width: 180px;
   height: 180px;
-  margin: 30%;
+  margin: 7% 40%;
   border-radius: 50%;
 }
-@media (min-width: 767px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   #animation_header .arc {
-    width: 200px;
-    height: 200px;
-    margin: 20% 40%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  #animation_header .arc {
-    margin: 7% 40%;
+    display: none;
   }
 }
 #animation_header .arc:nth-child(1) {
   -moz-animation-name: rotate1;
   -webkit-animation-name: rotate1;
   animation-name: rotate1;
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -moz-animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
@@ -577,9 +579,9 @@ button {
   -moz-animation-name: rotate2;
   -webkit-animation-name: rotate2;
   animation-name: rotate2;
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -moz-animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
@@ -600,9 +602,9 @@ button {
   -moz-animation-name: rotate3;
   -webkit-animation-name: rotate3;
   animation-name: rotate3;
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -moz-animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;

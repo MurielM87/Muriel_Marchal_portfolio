@@ -11,6 +11,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .interest {
@@ -18,4 +19,5 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    margin-left: 10px;
 }

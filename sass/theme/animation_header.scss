@@ -1,4 +1,5 @@
 #animation_header {
+  margin-left: 150px;
   transform-style: preserve-3d;
   perspective: 800px;
   pointer-events: none;
@@ -18,15 +19,10 @@
     left: 0;
     width: 180px;
     height: 180px;
-    margin: 30%;
+    margin: 7% 40%;
     border-radius: 50%;
-    @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
-      width: 200px;
-      height: 200px;
-      margin: 20% 40%;
-    }
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-      margin: 7% 40%;
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
+      display: none
     }
 
     @for $i from 1 through 3 {
@@ -34,9 +30,9 @@
         -moz-animation-name: rotate#{$i};
         -webkit-animation-name: rotate#{$i};
         animation-name: rotate#{$i};
-        -moz-animation-duration: 0.5s;
-        -webkit-animation-duration: 0.5s;
-        animation-duration: 0.5s;
+        -moz-animation-duration: 0.8s;
+        -webkit-animation-duration: 0.8s;
+        animation-duration: 0.8s;
         -webkit-animation-timing-function: linear;
         -moz-animation-timing-function: linear;
         animation-timing-function: linear;

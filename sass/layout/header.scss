@@ -27,8 +27,12 @@
 .description {
   display: flex;
   flex-direction: row;
-  margin: 10px 5px 40px 5px;
-  font-size: 27px;
+  font-size: 20px;
+  margin-left: -20px;
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    font-size: 27px;
+    margin: 10px 5px 40px 5px;
+  }
 }
 #name {
   display: flex;
@@ -72,11 +76,11 @@ h5 {
   margin-top: 10px;
 }
 
-li {
+header li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 15px;
+  margin: 15px 0px;
   padding-bottom: 15px;
 }
 
