@@ -472,6 +472,16 @@ button {
   padding: 5px;
 }
 
+#langages {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1000px) {
+  #langages {
+    justify-content: space-around;
+  }
+}
+
 .imgLangage {
   width: 30px;
   height: 30px;

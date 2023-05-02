@@ -1,3 +1,10 @@
+#langages {
+  display: flex;
+  flex-direction: row;
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    justify-content: space-around;
+  }
+}
 .imgLangage {
   width: 30px;
   height: 30px;
