@@ -1,11 +1,11 @@
-#langages {
+#languages {
   display: flex;
   flex-direction: row;
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     justify-content: space-around;
   }
 }
-.imgLangage {
+.imgLanguage {
   width: 30px;
   height: 30px;
   @media screen and (min-width: map-get($breakpoints, desktop)) {
@@ -14,7 +14,7 @@
   }
 }
 
-.langageList {
+.languageList {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
