@@ -423,19 +423,26 @@ ol {
 #technoList #category .categoryTechno {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 40%;
+  justify-content: center;
   margin-bottom: 20px;
 }
 #technoList #category .categoryTechno li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  animation: ImgApparition 5s ease linear;
 }
 #technoList #category .categoryTechno .imgTechno {
   width: 50px;
   height: 50px;
   margin: 10px;
+  animation: imgMove 2s ease-in-out infinite;
+}
+
+h4 {
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .swiper {

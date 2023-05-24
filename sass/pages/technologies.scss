@@ -25,20 +25,21 @@
     .categoryTechno {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      width: 40%;
+      justify-content: center;
       margin-bottom: 20px;
 
       li {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        animation: ImgApparition 5s ease linear;
       }
 
       .imgTechno {
         width: 50px;
         height: 50px;
         margin: 10px;
+        animation: imgMove 2s ease-in-out infinite;
       }
     }
   }
