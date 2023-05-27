@@ -145,8 +145,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #020c0e;
-  background-color: aqua;
+  color: aqua;
 }
 
 footer {
@@ -291,14 +290,15 @@ footer {
   flex-direction: row;
   justify-content: center;
 }
-
-.tooltip {
+.skilleos_items .tooltip {
   position: relative;
   display: inline-block;
   margin-left: 5px;
 }
-
-.tooltip .tooltiptext {
+.skilleos_items .tooltip .fa-info-circle:hover {
+  color: red;
+}
+.skilleos_items .tooltip .tooltiptext {
   visibility: hidden;
   background-color: #3c3737;
   color: #fff;
@@ -310,31 +310,27 @@ footer {
   position: absolute;
   z-index: 1;
 }
-
-.tooltip_title {
-  color: red;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-li {
+.skilleos_items .tooltip .tooltiptext li {
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 @media screen and (min-width: 1000px) {
-  li {
+  .skilleos_items .tooltip .tooltiptext li {
     flex-direction: row;
   }
 }
-
-ol {
+.skilleos_items .tooltip .tooltiptext li ol {
   margin: 10px;
   width: 100px;
   text-align: center;
+}
+.skilleos_items .tooltip .tooltiptext li ol .tooltip_title {
+  color: red;
+}
+.skilleos_items .tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 #presentation {
@@ -342,52 +338,50 @@ ol {
   flex-direction: column;
   margin: 10px;
 }
-
-#mainName {
+#presentation #mainName {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 1000px) {
-  #mainName {
+  #presentation #mainName {
     flex-direction: row;
   }
 }
-
-#mainPresentation {
+#presentation #mainPresentation {
   margin: 10px 5px 40px 5px;
   display: flex;
   flex-direction: column;
   font-size: 20px;
 }
-
-#autres_formations {
+#presentation #formation_oc i:hover {
+  color: turquoise;
+}
+#presentation #autres_formations {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 1000px) {
-  #autres_formations {
+  #presentation #autres_formations {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-
-#skilleos {
+#presentation #skilleos {
   width: 100%;
   text-align: center;
 }
 @media screen and (min-width: 1000px) {
-  #skilleos {
+  #presentation #skilleos {
     margin-right: 20px;
     width: 35% px;
   }
 }
-
-#autres_competences {
+#presentation #autres_competences {
   width: 100%;
   line-height: 20px;
 }
 @media screen and (min-width: 1000px) {
-  #autres_competences {
+  #presentation #autres_competences {
     width: 60%;
     margin-left: 200px;
   }
@@ -436,7 +430,6 @@ ol {
   width: 50px;
   height: 50px;
   margin: 10px;
-  animation: imgMove 2s ease-in-out infinite;
 }
 
 h4 {
@@ -488,38 +481,24 @@ button {
     justify-content: space-around;
   }
 }
-
-.imgLanguage {
+#languages .imgLanguage {
   width: 30px;
   height: 30px;
 }
 @media screen and (min-width: 1000px) {
-  .imgLanguage {
+  #languages .imgLanguage {
     width: 50px;
     height: 50px;
   }
 }
-
-.languageList {
+#languages .languageList {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 @media screen and (min-width: 1000px) {
-  .languageList {
+  #languages .languageList {
     flex-direction: column;
-  }
-}
-
-.imgInterest {
-  width: 30px;
-  height: 30px;
-  margin: auto;
-}
-@media screen and (min-width: 1000px) {
-  .imgInterest {
-    width: 50px;
-    height: 50px;
   }
 }
 
@@ -530,14 +509,24 @@ button {
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.interest {
+#interestCenter .interest {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
   margin-left: 10px;
   width: 15%;
+}
+#interestCenter .interest .imgInterest {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+@media screen and (min-width: 1000px) {
+  #interestCenter .interest .imgInterest {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 #animation_header {
@@ -683,6 +672,34 @@ button {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn);
     opacity: 0;
   }
+}
+
+.imgTechno {
+  animation: imgMove 5s ease-in-out infinite;
+}
+
+@keyframes imgMove {
+  0%, 100% {
+    transform: rotate(-35deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+}
+.img1 {
+  animation-delay: 0s;
+}
+
+.img2 {
+  animation-delay: -3s;
+}
+
+.img3 {
+  animation-delay: -5s;
+}
+
+.img {
+  animation-delay: -2s;
 }
 
 /*# sourceMappingURL=style.css.map */

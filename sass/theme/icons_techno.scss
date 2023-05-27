@@ -1,0 +1,24 @@
+.imgTechno {    
+    animation: imgMove 5s ease-in-out infinite;
+}
+
+@keyframes imgMove {
+    0%, 100% {
+        transform: rotate(-35deg);
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+}
+.img1 {
+    animation-delay: 0s;
+}
+.img2 {
+    animation-delay: -3s;
+}
+.img3 {
+    animation-delay: -5s;
+}
+.img {
+    animation-delay: -2s;
+}
