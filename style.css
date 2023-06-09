@@ -675,7 +675,7 @@ button {
 }
 
 .imgTechno {
-  animation: imgMove 5s ease-in-out infinite;
+  animation: imgMove 3s ease-in-out infinite;
 }
 
 @keyframes imgMove {
