@@ -11,7 +11,10 @@
     align-items: center;
     margin-top: 10px;
     margin-left: 10px;
-    width: 15%;
+    width: 75px;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      width: 15%;
+    }
 
     .imgInterest {
       width: 30px;

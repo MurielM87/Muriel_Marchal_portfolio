@@ -1,6 +1,8 @@
 #languages {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     justify-content: space-around;
   }

@@ -20,9 +20,12 @@
       border-radius: 10px;
       padding: 5px 0;
       top: -5px;
-      left: 105%;
+      left: -450%;
       position: absolute;
       z-index: 1;
+      @media screen and (min-width: map-get($breakpoints, desktop)) {        
+        left: 105%;
+      }
       li {
         display: flex;
         flex-direction: column;

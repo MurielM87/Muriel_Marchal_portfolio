@@ -306,9 +306,14 @@ footer {
   border-radius: 10px;
   padding: 5px 0;
   top: -5px;
-  left: 105%;
+  left: -450%;
   position: absolute;
   z-index: 1;
+}
+@media screen and (min-width: 1000px) {
+  .skilleos_items .tooltip .tooltiptext {
+    left: 105%;
+  }
 }
 .skilleos_items .tooltip .tooltiptext li {
   display: flex;
@@ -475,6 +480,8 @@ button {
 #languages {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
   #languages {
@@ -515,7 +522,12 @@ button {
   align-items: center;
   margin-top: 10px;
   margin-left: 10px;
-  width: 15%;
+  width: 75px;
+}
+@media screen and (min-width: 1000px) {
+  #interestCenter .interest {
+    width: 15%;
+  }
 }
 #interestCenter .interest .imgInterest {
   width: 30px;
