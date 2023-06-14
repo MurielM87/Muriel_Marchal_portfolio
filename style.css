@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 * {
   margin: 0;
@@ -34,19 +35,6 @@ span {
   font-weight: 900;
 }
 
-#img_header {
-  height: 200px;
-  width: 200px;
-  object-fit: contain;
-  margin: auto;
-  margin-top: 10px;
-}
-@media screen and (min-width: 1000px) {
-  #img_header {
-    margin: 20px;
-  }
-}
-
 #headerContainer {
   display: flex;
   flex-direction: column;
@@ -58,15 +46,32 @@ span {
     margin-left: 10px;
   }
 }
-
-#presentationHeader {
+#headerContainer #presentationHeader {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 1000px) {
-  #presentationHeader {
+  #headerContainer #presentationHeader {
     flex-direction: row;
   }
+}
+#headerContainer #presentationHeader #img_header {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  margin: auto;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1000px) {
+  #headerContainer #presentationHeader #img_header {
+    margin: 20px;
+  }
+}
+#headerContainer #presentationHeader #img_header #name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 20px;
 }
 
 .description {
@@ -80,13 +85,6 @@ span {
     font-size: 27px;
     margin: 10px 5px 40px 5px;
   }
-}
-
-#name {
-  display: flex;
-  flex-direction: column;
-  margin-left: 70px;
-  margin-top: 20px;
 }
 
 h1 {
@@ -129,25 +127,71 @@ h5 {
   margin-top: 10px;
 }
 
-header li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 15px 0px;
-  padding-bottom: 15px;
-}
-
-.navBar {
+nav {
   font-size: 20px;
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0px;
+  margin-left: 140px;
 }
-
-a {
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  display: block;
   text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
 }
-a:hover {
-  color: aqua;
+nav a:hover {
+  color: turquoise;
+  border-bottom: 2px solid rgb(0, 68, 255);
+}
+nav .under {
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+nav ul li:hover .under {
+  display: block;
+}
+nav .under li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+nav .under a {
+  padding: 10px;
+  border-bottom: none;
+}
+nav .under a:hover {
+  border-bottom: none;
+  background-color: rgba(200, 200, 200, 0.1);
 }
 
+.drop-down > a::after {
+  content: "∇";
+  font-size: 12px;
+  margin-left: 10px;
+  color: turquoise;
+}
+
+/*fleche cote "\u25b8" */
 footer {
   display: flex;
   flex-direction: column;

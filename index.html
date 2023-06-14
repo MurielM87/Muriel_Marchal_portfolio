@@ -39,12 +39,27 @@
         </div>
       </div>
     </div>
+    <nav>
+      <ul>
+        <li class="drop-down"><a href="#">Présentation</a>
+          <ul class="under">
+            <li><a href="#mainName">Qui je suis</a></li>
+            <li><a href="#technoList">mes Technologies</a></li>
+            <li><a href="#formation_oc">ma formation OpenClassroom</a></li>
+            <li><a href="#autres_formations">mes autres formations</a></li>
+          </ul>
+        </li>
+        <li class="drop-down"><a href="#">Projets réalisés</a>
+          <ul class="under">
+            <li><a href="#oc_projects">Projets OpenClassroom</a></li>
+            <li><a href="#fm_projects">Projets Frontend Mentor</a></li>
+            <li><a href="#perso_projects">Projets personnels</a></li>
+          </ul>
+        </li>
+        <li class="drop-down"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <li>
-      <ul class="navBar"><a href="#presentation">Présentation</a></ul>
-      <ul class="navBar"><a href="#projects">Projets réalisés</a></ul>
-      <ul class="navBar"><a href="#contact">Contact</a></ul>
-    </li>
     <div class="separate_barre"></div>
 
   </header>
@@ -105,12 +120,18 @@
         <div id="formation_oc">
           <h3>2021-2022 : formation de développeur web chez OpenClassroom</h3>
           <p><span>1er projet</span> mise en place de la veille informationnelle</p>
-          <p><span>2e projet</span> Transformer une maquette en site web (HTML-CSS) avec le site d’hébergement de vacances Booki <a href="#projects"><i class="fas fa-eye"></i></a></p>
-          <p><span>3e projet</span> Dynamiser une page web avec des animations CSS (HTML-SASS-GITHUB) avec site des restaurants Ohmyfood <a href="#projects"><i class="fas fa-eye"></i></a></p>
-          <p><span>4e projet</span> Optimiser un site web existant (SEO) pour le faire passer en tête des résultats google avec le site de l'agence Chouette <a href="#projects"><i class="fas fa-eye"></i></a></p>
-          <div><span>5e projet</span> Construire un site e-commerce (HTML-CSS-JS) avec le site commercial Kanap <a href="#projects"><i class="fas fa-eye"></i></a></div>
-          <p><span>6e projet</span> Construire une API sécurisée pour une application d’avis gastronomiques (Node.js-MongoDB-Express-OWASP) <a href="#projects"><i class="fas fa-eye"></i></a></p>
-          <p><span>7e projet</span> Créer un réseau social d’entreprise (Vue.js-MySQL Workbench) <a href="#projects"><i class="fas fa-eye"></i></a></p>
+          <p><span>2e projet</span> Transformer une maquette en site web (HTML-CSS) avec le site d’hébergement de
+            vacances Booki <a href="#projects"><i class="fas fa-eye"></i></a></p>
+          <p><span>3e projet</span> Dynamiser une page web avec des animations CSS (HTML-SASS-GITHUB) avec site des
+            restaurants Ohmyfood <a href="#projects"><i class="fas fa-eye"></i></a></p>
+          <p><span>4e projet</span> Optimiser un site web existant (SEO) pour le faire passer en tête des résultats
+            google avec le site de l'agence Chouette <a href="#projects"><i class="fas fa-eye"></i></a></p>
+          <div><span>5e projet</span> Construire un site e-commerce (HTML-CSS-JS) avec le site commercial Kanap <a
+              href="#projects"><i class="fas fa-eye"></i></a></div>
+          <p><span>6e projet</span> Construire une API sécurisée pour une application d’avis gastronomiques
+            (Node.js-MongoDB-Express-OWASP) <a href="#projects"><i class="fas fa-eye"></i></a></p>
+          <p><span>7e projet</span> Créer un réseau social d’entreprise (Vue.js-MySQL Workbench) <a href="#projects"><i
+                class="fas fa-eye"></i></a></p>
         </div>
         <div id="autres_formations">
           <div id="skilleos">
@@ -185,7 +206,7 @@
     <div class="barre"></div>
     <section id="projects">
       <h2>Mes réalisations</h2>
-      <h3>6 projets OpenClassroom de la formation de développeur web</h3>
+      <h3 id="oc_projects">6 projets OpenClassroom de la formation de développeur web</h3>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -258,12 +279,12 @@
         <div class="swiper-pagination"></div>
       </div>
 
-      <h3>12 Frontend Mentor Challenges</h3>
+      <h3 id="fm_projects">12 Frontend Mentor Challenges</h3>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <h5>clipboard-landing-page-master</h5>
-            <img src="./assets/frontend_mentor_c11.jpg" alt="Frontend Mentor Challenge"/>
+            <img src="./assets/frontend_mentor_c11.jpg" alt="Frontend Mentor Challenge" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/clipboard-landing-page-master">Code</a></button>
               <button><a href="https://murielm87.github.io/clipboard-landing-page-master/">Page</a></button>
@@ -274,8 +295,10 @@
             <h5>huddle-landing-page-with-single-introductory-section-master</h5>
             <img src="./assets/frontend_mentor_c18.jpg" alt="Frontend Mentor Challenge" />
             <div class="btn_code">
-              <button><a href="https://github.com/MurielM87/huddle-landing-page-with-single-introductory-section-master">Code</a></button>
-              <button><a href="https://murielm87.github.io/huddle-landing-page-with-single-introductory-section-master/">Page</a></button>
+              <button><a
+                  href="https://github.com/MurielM87/huddle-landing-page-with-single-introductory-section-master">Code</a></button>
+              <button><a
+                  href="https://murielm87.github.io/huddle-landing-page-with-single-introductory-section-master/">Page</a></button>
             </div>
             <div class="description">projet HTML CSS</div>
           </div>
@@ -373,7 +396,7 @@
         <div class="swiper-pagination"></div>
       </div>
 
-      <h3>    & mes autres projets ...</h3>
+      <h3 id="perso_projects"> & mes autres projets ...</h3>
 
       <h4>Applications / API</h4>
       <div class="swiper mySwiper">
@@ -385,46 +408,46 @@
               <button><a href="https://github.com/MurielM87/application_traduction_langues">Code</a></button>
               <button><a href="https://murielm87.github.io/application_traduction_langues/">Page</a></button>
             </div>
-          </div>    
+          </div>
           <div class="swiper-slide">
             <h5>Notes App</h5>
-            <img src="./assets/Notes_App.png" alt="notes app"/>
+            <img src="./assets/Notes_App.png" alt="notes app" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/notes-app">Code</a></button>
               <button><a href="https://murielm87.github.io/notes-app/">Page</a></button>
             </div>
-          </div>   
+          </div>
           <div class="swiper-slide">
             <h5>Toast Notifications</h5>
-            <img src="./assets/Toast_notifications.png" alt="Toast Notifications"/>
+            <img src="./assets/Toast_notifications.png" alt="Toast Notifications" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/toast-notification">Code</a></button>
               <button><a href="https://murielm87.github.io/toast-notification/">Page</a></button>
             </div>
-          </div>       
+          </div>
           <div class="swiper-slide">
             <h5>APP Movies Search Api</h5>
-            <img src="" alt="app movies search api"/>
+            <img src="" alt="app movies search api" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/app-movies-api">Code</a></button>
             </div>
-          </div>         
+          </div>
           <div class="swiper-slide">
             <h5>Application API guide Countries</h5>
-            <img src="./assets/App_Guide_Countries.png" alt="app guide countries"/>
+            <img src="./assets/App_Guide_Countries.png" alt="app guide countries" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/application-guide-pays">Code</a></button>
               <button><a href="https://murielm87.github.io/application-guide-pays/">Page</a></button>
             </div>
-          </div> 
+          </div>
           <div class="swiper-slide">
             <h5>Application for food recipes with API</h5>
-            <img src="./assets/Food_Recipe_App.png" alt="app food recipes"/>
+            <img src="./assets/Food_Recipe_App.png" alt="app food recipes" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/food-recipe-app">Code</a></button>
               <button><a href="https://murielm87.github.io/food-recipe-app/">Page</a></button>
             </div>
-          </div>  
+          </div>
           <div class="swiper-slide">
             <h5>Show-Hide Password</h5>
             <img src="./assets/show-hide_password.jpg" alt="show-hide password" />
@@ -435,7 +458,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Animate Monkey for Login Form</h5>
-            <img src="./assets/Animated_Monkey_Login_Form.jpg" alt="animated monkey login form"/>
+            <img src="./assets/Animated_Monkey_Login_Form.jpg" alt="animated monkey login form" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/Monkey-Login-Form">Code</a></button>
               <button><a href="https://murielm87.github.io/Monkey-Login-Form/">Page</a></button>
@@ -448,10 +471,10 @@
               <button><a href="https://github.com/MurielM87/QR-code-reader">Code</a></button>
               <button><a href="https://murielm87.github.io/QR-code-reader/">Page</a></button>
             </div>
-          </div>  
+          </div>
           <div class="swiper-slide">
             <h5>QR-Code Generator</h5>
-            <img src="./assets/generator_qrcode.png" alt="generator qr-code"/>
+            <img src="./assets/generator_qrcode.png" alt="generator qr-code" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/generate-qr-code">Code</a></button>
               <button><a href="https://murielm87.github.io/generate-qr-code/">Page</a></button>
@@ -475,7 +498,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Currency Converter App</h5>
-            <img src="./assets/Currency_Converter_App.png" alt="currency converter app"/>
+            <img src="./assets/Currency_Converter_App.png" alt="currency converter app" />
             <div class="btn_code">
               <button><a href="ttps://github.com/MurielM87/currency-converter-aphp">Code</a></button>
             </div>
@@ -495,7 +518,7 @@
               <button><a href="https://github.com/MurielM87/resize-and-compress-images">Code</a></button>
               <button><a href="https://murielm87.github.io/resize-and-compress-images/">Page</a></button>
             </div>
-          </div>  
+          </div>
           <div class="swiper-slide">
             <h5>PDF Converter</h5>
             <img src="./assets/pfd_converter_for_img.png" alt="converter for image" />
@@ -503,7 +526,7 @@
               <button><a href="https://github.com/MurielM87/pdf_converter">Code</a></button>
               <button><a href="https://murielm87.github.io/pdf_converter/">Page</a></button>
             </div>
-          </div>  
+          </div>
           <div class="swiper-slide">
             <h5>Easy Image Editor</h5>
             <img src="./assets/Easy_Image_Editor.png" alt="easy image editor" />
@@ -511,7 +534,7 @@
               <button><a href="https://github.com/MurielM87/easy-image-editor">Code</a></button>
               <button><a href="https://murielm87.github.io/easy-image-editor/">Page</a></button>
             </div>
-          </div>  
+          </div>
           <div class="swiper-slide">
             <h5>Gradient Color Generator</h5>
             <img src="./assets/Gradient_Color_Generator.png" />
@@ -519,7 +542,7 @@
               <button><a href="https://github.com/MurielM87/gradient_color_generator">Code</a></button>
               <button><a href="https://murielm87.github.io/gradient_color_generator/">Page</a></button>
             </div>
-          </div>         
+          </div>
           <div class="swiper-slide">
             <h5>Random Palette Color Generator</h5>
             <img src="./assets/Random_Palette_Color_Generator.png" alt="random palette color generator" />
@@ -527,10 +550,10 @@
               <button><a href="https://github.com/MurielM87/random-palette-color-generator">Code</a></button>
               <button><a href="https://murielm87.github.io/random-palette-color-generator/">Page</a></button>
             </div>
-          </div>  
+          </div>
           <div class="swiper-slide">
             <h5>Images Comparison Slider</h5>
-            <img src="./assets/Image_Comparison_Slider.png" alt="images comparisoon slider"/>
+            <img src="./assets/Image_Comparison_Slider.png" alt="images comparisoon slider" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/image-comparison-slider">Code</a></button>
               <button><a href="https://murielm87.github.io/image-comparison-slider/">Page</a></button>
@@ -543,7 +566,7 @@
               <button><a href="https://github.com/MurielM87/Product-Card-with-tricky-hover-effects">Code</a></button>
               <button><a href="https://murielm87.github.io/Product-Card-with-tricky-hover-effects/">Page</a></button>
             </div>
-          </div> 
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -552,7 +575,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <h5>jeu Memory</h5>
-            <img src="./assets/memory_game.png" alt="memory game"/>
+            <img src="./assets/memory_game.png" alt="memory game" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/memory">Code</a></button>
               <button><a href="https://murielm87.github.io/memory/">Page</a></button>
@@ -560,7 +583,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Tic Tac Toe Game</h5>
-            <img src="./assets/tic_tac_toe_game.png" alt="tic tac toe game"/>
+            <img src="./assets/tic_tac_toe_game.png" alt="tic tac toe game" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/tic_tac_toe_game">Code</a></button>
               <button><a href="https://murielm87.github.io/tic_tac_toe_game/">Page</a></button>
@@ -568,7 +591,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Rock Paper Scissors Game</h5>
-            <img src="./assets/Rock_Paper_&_Scissors_Game.png" alt="rock paper & scissors game"/>
+            <img src="./assets/Rock_Paper_&_Scissors_Game.png" alt="rock paper & scissors game" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/rock-paper-scissors-game">Code</a></button>
               <button><a href="https://murielm87.github.io/rock-paper-scissors-game/">Page</a></button>
@@ -576,7 +599,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Game Dice Roll</h5>
-            <img src="./assets/Dice roll.png" alt="dice roll"/>
+            <img src="./assets/Dice roll.png" alt="dice roll" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/dice-roll">Code</a></button>
               <button><a href="https://murielm87.github.io/dice-roll/">Page</a></button>
@@ -584,7 +607,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Le jeu du Serpent / Snake game</h5>
-            <img src="./assets/snake_game.png" alt="snake game"/>
+            <img src="./assets/snake_game.png" alt="snake game" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/snake_game">Code</a></button>
               <button><a href="https://murielm87.github.io/snake_game/">Page</a></button>
@@ -631,15 +654,15 @@
           </div>
           <div class="swiper-slide">
             <h5>Cube photos 3D</h5>
-            <img src="./assets/cube_3D.png" alt="cube 3D images"/>
+            <img src="./assets/cube_3D.png" alt="cube 3D images" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/cubes_3D">Code</a></button>
               <button><a href="https://murielm87.github.io/cubes_3D/">Page</a></button>
             </div>
-          </div>          
+          </div>
           <div class="swiper-slide">
             <h5>Boule liquide</h5>
-            <img src="./assets/boule_liquide.png" alt="boule liquide"/>
+            <img src="./assets/boule_liquide.png" alt="boule liquide" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/boule_liquid_css">Code</a></button>
               <button><a href="https://murielm87.github.io/boule_liquid_css/">Page</a></button>
@@ -647,7 +670,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Animated Eyes follow mouse</h5>
-            <img src="./assets/Animated_Eyes_follow_Mouse.png" alt="animated eyes follow mouse"/>
+            <img src="./assets/Animated_Eyes_follow_Mouse.png" alt="animated eyes follow mouse" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/animated-eyes-follow-mouse">Code</a></button>
               <button><a href="https://murielm87.github.io/animated-eyes-follow-mouse/">Page</a></button>
@@ -655,7 +678,7 @@
           </div>
           <div class="swiper-slide">
             <h5>CSS Emoji stars Rating Widget</h5>
-            <img src="./assets/Emoji_Star_Rating_Widget.png" alt="emoji stars rating widget"/>
+            <img src="./assets/Emoji_Star_Rating_Widget.png" alt="emoji stars rating widget" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/css-emoji-star-rating-widget">Code</a></button>
               <button><a href="https://murielm87.github.io/css-emoji-star-rating-widget/">Page</a></button>
@@ -663,7 +686,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Emoji range slider</h5>
-            <img src="./assets/Emoji_Range_Slider.png" alt="emoji range slider"/>
+            <img src="./assets/Emoji_Range_Slider.png" alt="emoji range slider" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/emoji-range-slider">Code</a></button>
               <button><a href="https://murielm87.github.io/emoji-range-slider/">Page</a></button>
@@ -671,7 +694,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Cube photos 3D en JavaScript</h5>
-            <img src="./assets/cube_3D_js.png" alt="cube 3D images"/>
+            <img src="./assets/cube_3D_js.png" alt="cube 3D images" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/cubes_3D_js">Code</a></button>
               <button><a href="https://murielm87.github.io/cubes_3D_js/">Page</a></button>
@@ -679,7 +702,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Galerie photos</h5>
-            <img src="./assets/galerie photos.png" alt="photos diaporam"/>
+            <img src="./assets/galerie photos.png" alt="photos diaporam" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/photos_gallerie">Code</a></button>
               <button><a href="https://murielm87.github.io/photos_gallerie/">Page</a></button>
@@ -687,7 +710,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Image 2D to 3D</h5>
-            <img src="./assets/2D_to_3D.png" alt="image 2D to 3D"/>
+            <img src="./assets/2D_to_3D.png" alt="image 2D to 3D" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/2D_to_3D">Code</a></button>
               <button><a href="https://murielm87.github.io/2D_to_3D/">Page</a></button>
@@ -695,7 +718,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Bird Text Hover Animation</h5>
-            <img src="./assets/image_behind_text_hover.png" alt="image behind text hover"/>
+            <img src="./assets/image_behind_text_hover.png" alt="image behind text hover" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/bird_text_hover_animation">Code</a></button>
               <button><a href="https://murielm87.github.io/bird_text_hover_animation/">Page</a></button>
@@ -719,7 +742,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Happy Holi</h5>
-            <img src="./assets/Happy_Holi_Animation_Effects.png" alt="happy holi animation effects"/>
+            <img src="./assets/Happy_Holi_Animation_Effects.png" alt="happy holi animation effects" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/happy-holi">Code</a></button>
               <button><a href="https://murielm87.github.io/happy-holi/">Page</a></button>
@@ -743,7 +766,7 @@
           </div>
           <div class="swiper-slide">
             <h5>CSS Cloud Banner Animation Effects</h5>
-            <img src="./assets/Animated_Cloud.png" alt="animated cloud"/>
+            <img src="./assets/Animated_Cloud.png" alt="animated cloud" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/CSS-Cloud-Banner-Animation-Effects">Code</a></button>
               <button><a href="https://murielm87.github.io/CSS-Cloud-Banner-Animation-Effects/">Page</a></button>
@@ -751,9 +774,10 @@
           </div>
           <div class="swiper-slide">
             <h5>Hand Print scanning animation effects</h5>
-            <img src="./assets/Hand_Print_Scanning_Animation_Effects.png" alt="hand print scanning animation effects"/>
+            <img src="./assets/Hand_Print_Scanning_Animation_Effects.png" alt="hand print scanning animation effects" />
             <div class="btn_code">
-              <button><a href="https://github.com/MurielM87/hand-print-scanning-animation-effects/settings/pages">Code</a></button>
+              <button><a
+                  href="https://github.com/MurielM87/hand-print-scanning-animation-effects/settings/pages">Code</a></button>
               <button><a href="https://murielm87.github.io/hand-print-scanning-animation-effects/">Page</a></button>
             </div>
           </div>
@@ -767,7 +791,7 @@
           </div>
           <div class="swiper-slide">
             <h5>Line Burst Background Animation</h5>
-            <img src="./assets/Line_Burst_Background_Animation.png" alt="line burst background animation"/>
+            <img src="./assets/Line_Burst_Background_Animation.png" alt="line burst background animation" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/line-burst-background-animation">Code</a></button>
               <button><a href="https://murielm87.github.io/line-burst-background-animation/">Page</a></button>
@@ -786,18 +810,18 @@
       </div>
       <h4>& autres projets JS</h4>
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper">    
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
             <h5>Digital Clock</h5>
-            <img src="./assets/digital_clock.png" alt="digital clock"/>
+            <img src="./assets/digital_clock.png" alt="digital clock" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/digital_clock">Code</a></button>
               <button><a href="https://murielm87.github.io/digital_clock/">Page</a></button>
             </div>
-          </div>          
+          </div>
           <div class="swiper-slide">
             <h5>Chronomètre</h5>
-            <img src="./assets/chronometre.png" alt="chronometre"/>
+            <img src="./assets/chronometre.png" alt="chronometre" />
             <div class="btn_code">
               <button><a href="https://github.com/MurielM87/chronometre">Code</a></button>
               <button><a href="https://murielm87.github.io/chronometre/">Page</a></button>
@@ -810,7 +834,7 @@
               <button><a href="https://github.com/MurielM87/Countdown-Timer">Code</a></button>
               <button><a href="https://murielm87.github.io/Countdown-Timer/">Page</a></button>
             </div>
-          </div> 
+          </div>
           <div class="swiper-slide">
             <h5>Playable Piano</h5>
             <img src="./assets/playable_piano.png" alt="playable piano" />
@@ -818,7 +842,7 @@
               <button><a href="https://github.com/MurielM87/playable-piano">Code</a></button>
               <button><a href="https://murielm87.github.io/playable-piano/">Page</a></button>
             </div>
-          </div> 
+          </div>
           <div class="swiper-slide">
             <h5>Projet Tout le monde aime Raymond</h5>
             <img src="./assets/EverybodyLovesRaymond.jpg" />
