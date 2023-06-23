@@ -158,6 +158,7 @@ nav ul li a:hover {
   color: #23dbdb;
 }
 nav ul ul {
+  width: 20%;
   position: absolute;
   top: 85px;
   border-top: 3px solid #23dbdb;
@@ -173,7 +174,7 @@ nav ul li:hover > ul {
   flex-direction: column;
 }
 nav ul ul li {
-  width: 20%;
+  width: 100%;
   position: relative;
   border: 1px solid #042331;
   border-top: none;
@@ -183,10 +184,11 @@ nav ul ul li a {
   line-height: 50px;
 }
 nav ul ul ul {
+  width: 80%;
   border-top: none;
 }
 nav ul ul ul li {
-  width: 70%;
+  width: 82%;
   position: relative;
   top: -70px;
   left: 200px;
