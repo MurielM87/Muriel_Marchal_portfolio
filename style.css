@@ -676,12 +676,16 @@ button {
   width: 30px;
   height: 30px;
   margin: auto;
+  border-radius: 5px;
 }
 @media screen and (min-width: 1000px) {
   #interestCenter .interest .imgInterest {
     width: 50px;
     height: 50px;
   }
+}
+#interestCenter .interest .imgInterest:nth-child(1) {
+  background: #fff;
 }
 #interestCenter .interest p {
   height: 20px;
