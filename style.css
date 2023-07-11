@@ -804,5 +804,19 @@ button {
     transform: rotate(360deg);
   }
 }
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(22) 1s infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
