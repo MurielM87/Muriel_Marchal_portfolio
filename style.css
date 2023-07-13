@@ -598,10 +598,10 @@ button {
   }
 }
 #interestCenter .interest .imgInterest {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 @media screen and (min-width: 1000px) {
   #interestCenter .interest .imgInterest {
@@ -802,6 +802,18 @@ button {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.imgInterest {
+  animation: animInterest 10s linear infinite;
+}
+
+@keyframes animInterest {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }
 .typing {
