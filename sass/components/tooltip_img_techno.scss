@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap");
+
+.tooltip_section {
+  position: relative;
+  display: inline-block;
+
+  .tooltiptext_techno {
+    font-family: "Playpen Sans", cursive;
+    font-size: 12px;
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  &:hover .tooltiptext_techno {
+    visibility: visible;
+  }
+}
