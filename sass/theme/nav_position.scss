@@ -1,0 +1,47 @@
+@supports(animation-timeline: view()){
+    @keyframes fade-out {
+      to {
+        background-size: 150%;
+        opacity: 0;
+      }
+    }
+    @keyframes zoom-out {
+      to {
+        font-size: 2rem;
+        padding-left: .1em;
+      }
+    }
+    @keyframes appear {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes max-out {
+      to {
+        max-width: 100%;
+      }
+    }
+    .container {
+      animation: fade-out linear both;
+      animation-timeline: view();
+      animation-range: exit -100px;
+    }
+    nav {
+      animation: max-out linear both;
+      animation-timeline: view();
+      animation-range-start: 80vh;
+      animation-range-end: 100vh;
+    }
+    nav:after {
+      animation: appear linear both;
+      animation-timeline: view();
+      animation-range-start: 60vh;
+      animation-range-end: 100vh;
+    }
+    .logo {
+      animation: zoom-out linear both;
+      animation-timeline: view();
+      animation-range-start: 10vh;
+      animation-range-end: 100vh;
+    }
+  }
