@@ -21,7 +21,7 @@
         max-width: 100%;
       }
     }
-    .container {
+    header {
       animation: fade-out linear both;
       animation-timeline: view();
       animation-range: exit -100px;

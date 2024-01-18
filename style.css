@@ -127,14 +127,14 @@ h5 {
   margin-top: 10px;
 }
 
-.container {
+header {
   position: relative;
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: 100% 11%;
   mix-blend-mode: lighten;
 }
-.container nav {
+header nav {
   font-size: 20px;
   width: 100%;
   height: 50px;
@@ -150,7 +150,7 @@ h5 {
   align-items: center;
   padding: 0;
 }
-.container nav ul {
+header nav ul {
   width: 100%;
   float: right;
   margin-left: 30px;
@@ -160,7 +160,7 @@ h5 {
   display: inline-flex;
   gap: 1rem;
 }
-.container nav ul li {
+header nav ul li {
   display: inline-block;
   width: 30%;
   list-style: none;
@@ -168,7 +168,7 @@ h5 {
   cursor: pointer;
   transition: 0.5s linear;
 }
-.container nav ul li a {
+header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -177,10 +177,10 @@ h5 {
   line-height: 70px;
   transition: 0.5s;
 }
-.container nav ul li a:hover {
+header nav ul li a:hover {
   color: #23dbdb;
 }
-.container nav ul ul {
+header nav ul ul {
   width: 20%;
   position: absolute;
   top: 85px;
@@ -188,7 +188,7 @@ h5 {
   opacity: 0;
   visibility: hidden;
 }
-.container nav ul li:hover > ul {
+header nav ul li:hover > ul {
   top: 70px;
   opacity: 1;
   visibility: visible;
@@ -196,27 +196,27 @@ h5 {
   display: flex;
   flex-direction: column;
 }
-.container nav ul ul li {
+header nav ul ul li {
   width: 100%;
   position: relative;
   border: 1px solid #042331;
   border-top: none;
   list-style: none;
 }
-.container nav ul ul li a {
+header nav ul ul li a {
   line-height: 50px;
 }
-.container nav ul ul ul {
+header nav ul ul ul {
   width: 80%;
   border-top: none;
 }
-.container nav ul ul ul li {
+header nav ul ul ul li {
   width: 82%;
   position: relative;
   top: -70px;
   left: 200px;
 }
-.container nav ul ul ul li a i {
+header nav ul ul ul li a i {
   margin-left: 45px;
 }
 
@@ -809,7 +809,7 @@ button {
       max-width: 100%;
     }
   }
-  .container {
+  header {
     animation: fade-out linear both;
     animation-timeline: view();
     animation-range: exit -100px;
