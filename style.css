@@ -132,7 +132,7 @@ header {
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: 100% 11%;
-  mix-blend-mode: lighten;
+  mix-blend-mode: hard-light;
 }
 header nav {
   font-size: 20px;
@@ -579,13 +579,13 @@ button {
   pointer-events: none;
 }
 #animation_header .primary {
-  border-bottom: 5px solid rgb(23, 237, 216);
+  border-bottom: 5px solid rgb(237, 219, 23);
 }
 #animation_header .secondary {
-  border-bottom: 6px solid rgb(2, 167, 250);
+  border-bottom: 6px solid rgb(2, 246, 250);
 }
 #animation_header .third {
-  border-bottom: 7px solid rgb(15, 85, 175);
+  border-bottom: 7px solid rgb(3, 254, 49);
 }
 #animation_header .arc {
   position: absolute;
@@ -672,14 +672,14 @@ button {
   animation-play-state: running;
 }
 #animation_header .arc:nth-child(1) {
-  -webkit-animation-delay: -0.8s;
-  -moz-animation-delay: -0.8s;
-  animation-delay: -0.8s;
+  -webkit-animation-delay: -0.7s;
+  -moz-animation-delay: -0.7s;
+  animation-delay: -0.7s;
 }
 #animation_header .arc:nth-child(2) {
-  -webkit-animation-delay: -0.4s;
-  -moz-animation-delay: -0.4s;
-  animation-delay: -0.4s;
+  -webkit-animation-delay: -0.5s;
+  -moz-animation-delay: -0.5s;
+  animation-delay: -0.5s;
 }
 #animation_header .arc:nth-child(3) {
   -webkit-animation-delay: 0s;
