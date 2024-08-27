@@ -4,20 +4,20 @@
 
 @keyframes imgMove {
     0%, 100% {
-        transform: rotate(-35deg);
+        transform: rotate(-25deg);
     }
     50% {
-        transform: rotate(35deg);
+        transform: rotate(25deg);
     }
 }
 .img1 {
     animation-delay: 0s;
 }
 .img2 {
-    animation-delay: -3s;
+    animation-delay: -2s;
 }
 .img3 {
-    animation-delay: -5s;
+    animation-delay: -4s;
 }
 .img4 {
     animation-delay: -2s;
