@@ -7,5 +7,8 @@
     "sass": "sass --watch ./sass/main.scss:style.css"
   },
   "author": "Muriel MARCHAL",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "portfolio": "file:"
+  }
 }
