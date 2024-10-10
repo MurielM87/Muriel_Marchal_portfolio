@@ -9,6 +9,10 @@
   "author": "Muriel MARCHAL",
   "license": "ISC",
   "dependencies": {
+    "node": "^20.18.0",
     "portfolio": "file:"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
   }
 }
