@@ -1,24 +1,14 @@
 .imgTechno {    
-    animation: imgMove 3s ease-in-out infinite;
+    &hover {
+        animation: imgMove 3s ease-in-out infinite;
+    }    
 }
 
 @keyframes imgMove {
-    0%, 100% {
-        transform: rotate(-25deg);
+    0% {
+        transform: scale3d(100%);
     }
-    50% {
-        transform: rotate(25deg);
+    100% {
+        transform: scale3d(120%);
     }
-}
-.img1 {
-    animation-delay: 0s;
-}
-.img2 {
-    animation-delay: -2s;
-}
-.img3 {
-    animation-delay: -4s;
-}
-.img4 {
-    animation-delay: -2s;
 }
