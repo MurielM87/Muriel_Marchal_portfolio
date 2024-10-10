@@ -717,16 +717,16 @@ button {
   }
 }
 
-.imgTechnohover {
-  animation: imgMove 3s ease-in-out infinite;
+.imgTechno:hover {
+  animation: imgMove 1.5s ease-in-out infinite;
 }
 
 @keyframes imgMove {
   0% {
-    transform: scale3d(100%);
+    transform: scale3d(1, 1, 1);
   }
   100% {
-    transform: scale3d(120%);
+    transform: scale3d(1.5, 1.5, 1.5);
   }
 }
 #languages .languageList .imgLanguage {
