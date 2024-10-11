@@ -538,6 +538,7 @@ button {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 35px;
 }
 #interestCenter .interest {
   display: flex;
@@ -725,20 +726,12 @@ button {
 }
 
 #languages .languageList .imgLanguage {
-  animation: languageImg 3s linear infinite;
+  transition: transform 0.3s ease-in-out;
+}
+#languages .languageList .imgLanguage:hover {
+  transform: scale(1.5);
 }
 
-@keyframes languageImg {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .imgInterest {
   animation: animInterest 10s linear infinite;
 }
