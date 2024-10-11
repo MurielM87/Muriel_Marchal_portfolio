@@ -19,7 +19,7 @@
       margin: auto;
       margin-top: 10px;
       @media screen and (min-width: map-get($breakpoints, desktop)) {
-        margin: 20px;
+        margin-left: 20px;
       }
       #name {
         display: flex;
@@ -42,8 +42,9 @@
   }
 }
 h1 {
-  font-size: 25px;
+  font-size: 40px;
   font-family: "Dancing", Arial, Helvetica, sans-serif;
+  margin-top: 40px;
 }
 
 h2 {

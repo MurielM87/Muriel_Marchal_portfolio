@@ -64,7 +64,7 @@ span {
 }
 @media screen and (min-width: 1000px) {
   #headerContainer #presentationHeader #img_header {
-    margin: 20px;
+    margin-left: 20px;
   }
 }
 #headerContainer #presentationHeader #img_header #name {
@@ -88,8 +88,9 @@ span {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 40px;
   font-family: "Dancing", Arial, Helvetica, sans-serif;
+  margin-top: 40px;
 }
 
 h2 {
@@ -247,7 +248,7 @@ footer {
 .separate_barre {
   width: 100%;
   height: 10px;
-  background: linear-gradient(-45deg, #23A6D5, #23A5AB, #2407e2, #9a15c3);
+  background: linear-gradient(-45deg, #23A6D5, #23A5AB, #2407e2, #d827db);
   background-size: 400% 400%;
   margin: auto;
   margin: 20px 0px;
