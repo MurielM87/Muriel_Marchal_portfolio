@@ -717,18 +717,13 @@ button {
   }
 }
 
+.imgTechno {
+  transition: transform 0.3s ease-in-out;
+}
 .imgTechno:hover {
-  animation: imgMove 1.5s ease-in-out infinite;
+  transform: scale(1.5);
 }
 
-@keyframes imgMove {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  100% {
-    transform: scale3d(1.5, 1.5, 1.5);
-  }
-}
 #languages .languageList .imgLanguage {
   animation: languageImg 3s linear infinite;
 }
