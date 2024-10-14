@@ -39,7 +39,7 @@ span {
 #header_container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: first baseline;
   margin: auto;
 }
 @media screen and (min-width: 1000px) {
@@ -50,12 +50,11 @@ span {
 #header_container #presentation_header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-between;
 }
 @media screen and (min-width: 1000px) {
   #header_container #presentation_header {
     flex-direction: row;
-    width: 60%;
     align-items: flex-start;
   }
 }
@@ -561,6 +560,7 @@ button {
 }
 
 #animation_header {
+  margin-left: 300px;
   margin-top: 20px;
   transform-style: preserve-3d;
   perspective: 800px;

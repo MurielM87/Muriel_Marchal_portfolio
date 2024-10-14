@@ -1,8 +1,10 @@
 #animation_header {
+  margin-left: 300px;
   margin-top: 20px;
-    transform-style: preserve-3d;
-    perspective: 800px;
-    pointer-events: none;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  pointer-events: none;
+  
   .primary {
     border-bottom: 5px solid rgb(23, 27, 237);
   }
