@@ -4,7 +4,9 @@
   "description": "portfolio de Muriel Marchal",
   "main": "script.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:style.css"
+    "sass": "sass --watch ./sass/main.scss:style.css",
+    "build:css": "postcss style.css -o output.css",
+    "dev": "npm-run-all --parallel sass build:css"
   },
   "author": "Muriel MARCHAL",
   "license": "ISC",
@@ -13,6 +15,10 @@
     "portfolio": "file:"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.4.13"
   }
 }

@@ -1,8 +1,8 @@
 #animation_header {
-  margin-left: 300px;
-  transform-style: preserve-3d;
-  perspective: 800px;
-  pointer-events: none;
+  margin-top: 20px;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    pointer-events: none;
   .primary {
     border-bottom: 5px solid rgb(23, 27, 237);
   }
@@ -14,16 +14,12 @@
   }
   .arc {
     position: absolute;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 180px;
-    margin: 7% 40%;
-    border-radius: 50%;
-    @media screen and (max-width: map-get($breakpoints, desktop)) {
-      display: none
-    }
+      z-index: 4;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
 
     @for $i from 1 through 3 {
       &:nth-child(#{$i}) {

@@ -24,38 +24,36 @@
 </head>
 
 <body>
-  <header class="container">
-    <div id="headerContainer">
-      <div id="presentationHeader">
-        <img src="./assets/ciel_etoile.jpg" alt="tableau de Muriel MARCHAL" id="img_header">
-        <div id="name">
-          <h1>Muriel MARCHAL</h1>
-          <p class="description">Développeuse Web FullStack</p>
-        </div>
-        <div id="animation_header">
+  <header id="header_container">
+    <div id="presentation_header">
+      <img src="./assets/ciel_etoile.jpg" alt="tableau de Muriel MARCHAL" id="img_header">
+      <div id="name">
+        <h1>Muriel MARCHAL</h1>
+        <p class="description">Développeuse Web FullStack</p>
+      </div>
+      <div id="animation_header">
           <div class="arc primary"></div>
           <div class="arc secondary"></div>
           <div class="arc third"></div>
-        </div>
       </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">PRESENTATION <i class="fas fa-caret-down"></i></a>
-          <ul>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="#">PRESENTATION</a>
+          <ul class="sub-menu">
             <li><a href="#mainName">Qui je suis...</a></li>
-            <li><a href="#technoList">mes Technologies</a></li>
-            <li><a href="#formation_oc">ma formation OpenClassroom</a></li>
-            <li><a href="#autres_formations">mes autres formations</a></li>
+            <li><a href="#technoList">Mes Technologies</a></li>
+            <li><a href="#formation_oc">Ma formation OpenClassroom</a></li>
+            <li><a href="#autres_formations">Mes autres formations</a></li>
           </ul>
         </li>
-        <li><a href="#projects">PROJETS REALISES <i class="fas fa-caret-down"></i></a>
-          <ul>
+        <li><a href="#projects">PROJETS REALISES</a>
+          <ul class="sub-menu">
             <li><a href="#oc_projects">Projets OpenClassroom</a></li>
             <li><a href="#fm_projects">Projets Frontend Mentor</a></li>
-            <li><a href="#perso_projects">Projets personnels <i class="fas fa-caret-right"></i></a>
-              <ul>
-                <li><a href="#app_projects">App / Api</a></li>
+            <li><a href="#perso_projects">Projets personnels</a>
+              <ul class="sub-sub-menu">
+                <li><a href="#app_projects">App / API</a></li>
                 <li><a href="#game_projects">Jeux / Games</a></li>
                 <li><a href="#animations_projects">Animations</a></li>
                 <li><a href="#others_projects">... et autres projets</a></li>
@@ -66,18 +64,14 @@
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
-
-    <div class="separate_barre"></div>
-
   </header>
-
+  <div class="separate_barre"></div>
   <main class="container">
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <section id="presentation">
       <div id="mainName">
         <h2>Qui je suis ...</h2>
         <div id="mainPresentation">
-          <div>Je me présente... <span>Muriel Marchal</span></div>
           <div>développeuse web fullstack curieuse et créative</div>
           <p>artiste peintre et sculptrice en grès passionnée</p>
           <p>Minutieuse, autonome, persévérante, créative et curieuse, j’aime découvrir de nouvelles

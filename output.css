@@ -36,53 +36,44 @@ span {
   font-weight: 900;
 }
 
-#header_container {
+#headerContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: auto;
 }
 @media screen and (min-width: 1000px) {
-  #header_container {
+  #headerContainer {
+    flex-direction: row;
     margin-left: 10px;
   }
 }
-#header_container #presentation_header {
+#headerContainer #presentationHeader {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 @media screen and (min-width: 1000px) {
-  #header_container #presentation_header {
+  #headerContainer #presentationHeader {
     flex-direction: row;
-    width: 60%;
-    align-items: flex-start;
   }
 }
-#header_container #presentation_header #img_header {
+#headerContainer #presentationHeader #img_header {
   height: 200px;
   width: 200px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: auto;
   margin-top: 10px;
 }
 @media screen and (min-width: 1000px) {
-  #header_container #presentation_header #img_header {
+  #headerContainer #presentationHeader #img_header {
     margin-left: 20px;
   }
 }
-#header_container #presentation_header #name {
+#headerContainer #presentationHeader #img_header #name {
   display: flex;
   flex-direction: column;
-  margin-left: 0;
+  margin-left: 70px;
   margin-top: 20px;
-  align-items: center;
-}
-@media screen and (min-width: 1000px) {
-  #header_container #presentation_header #name {
-    margin-left: 70px;
-    align-items: flex-start;
-  }
 }
 
 .description {
@@ -139,72 +130,85 @@ h5 {
   margin-top: 10px;
 }
 
-.main-nav {
+header {
+  position: relative;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 100% 11%;
+  mix-blend-mode: hard-light;
+}
+header nav{
   position: sticky;
-  top: 0;
-  z-index: 1000;
+  top: 0px;
+  z-index: 50;
+  display: flex;
+  height: 3rem;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 0.5rem 0;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.8;
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
-.main-nav .nav-list {
+header nav ul{
   display: flex;
-  list-style: none;
-  gap: 2rem;
-  padding: 0;
-  margin: 0;
+  gap: 1rem;
 }
-.main-nav .nav-list li {
+header nav ul li{
   position: relative;
 }
-.main-nav .nav-list li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s;
+header nav ul li a{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-nav .nav-list li a:hover {
-  color: #23dbdb;
+header nav ul li a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
 }
-.main-nav .nav-list li .sub-menu {
+header nav ul li ul{
+  visibility: hidden;
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #444;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
+  top: 3rem;
+  left: 0px;
+  width: 10rem;
   flex-direction: column;
-  width: 200px;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.9;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-nav .nav-list li .sub-menu li a {
-  padding: 0.5rem;
-  display: block;
-  color: white;
-  background-color: #444;
+header nav ul li:hover > ul{
+  visibility: visible;
+  opacity: 1;
 }
-.main-nav .nav-list li .sub-menu li a:hover {
-  background-color: #555;
+header nav ul li ul li{
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
-.main-nav .nav-list li:hover > .sub-menu {
-  display: flex;
+header nav ul li ul li a{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-.main-nav .nav-list li .sub-sub-menu {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  background-color: #444;
-  display: none;
-}
-.main-nav .nav-list li .sub-sub-menu li a {
-  padding: 0.5rem;
-}
-.main-nav .nav-list li:hover > .sub-menu > li:hover > .sub-sub-menu {
-  display: flex;
+header nav ul li ul li ul{
+  left: 10rem;
+  top: 0px;
+  width: 10rem;
 }
 
 footer {
@@ -467,7 +471,8 @@ h4 {
   display: block;
   width: 100%;
   height: 200px;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .btn_code {
@@ -561,7 +566,7 @@ button {
 }
 
 #animation_header {
-  margin-top: 20px;
+  margin-left: 300px;
   transform-style: preserve-3d;
   perspective: 800px;
   pointer-events: none;
@@ -582,90 +587,48 @@ button {
   left: 0;
   width: 180px;
   height: 180px;
+  margin: 7% 40%;
   border-radius: 50%;
 }
+@media screen and (max-width: 1000px) {
+  #animation_header .arc {
+    display: none;
+  }
+}
 #animation_header .arc:nth-child(1) {
-  -moz-animation-name: rotate1;
-  -webkit-animation-name: rotate1;
   animation-name: rotate1;
-  -moz-animation-duration: 0.8s;
-  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-  -moz-animation-direction: normal;
   animation-direction: normal;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
   animation-play-state: running;
 }
 #animation_header .arc:nth-child(2) {
-  -moz-animation-name: rotate2;
-  -webkit-animation-name: rotate2;
   animation-name: rotate2;
-  -moz-animation-duration: 0.8s;
-  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-  -moz-animation-direction: normal;
   animation-direction: normal;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
   animation-play-state: running;
 }
 #animation_header .arc:nth-child(3) {
-  -moz-animation-name: rotate3;
-  -webkit-animation-name: rotate3;
   animation-name: rotate3;
-  -moz-animation-duration: 0.8s;
-  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-  -moz-animation-direction: normal;
   animation-direction: normal;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
   animation-play-state: running;
 }
 #animation_header .arc:nth-child(1) {
-  -webkit-animation-delay: -0.7s;
-  -moz-animation-delay: -0.7s;
   animation-delay: -0.7s;
 }
 #animation_header .arc:nth-child(2) {
-  -webkit-animation-delay: -0.5s;
-  -moz-animation-delay: -0.5s;
   animation-delay: -0.5s;
 }
 #animation_header .arc:nth-child(3) {
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
   animation-delay: 0s;
 }
 @keyframes rotate1 {
@@ -787,4 +750,4 @@ button {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=output.css.map */

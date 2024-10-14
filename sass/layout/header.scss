@@ -1,31 +1,46 @@
-#headerContainer {
+#header_container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: auto;
+  
   @media screen and (min-width: map-get($breakpoints, desktop)) {
-    flex-direction: row;
     margin-left: 10px;
   }
-  #presentationHeader {
+
+  #presentation_header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     @media screen and (min-width: map-get($breakpoints, desktop)) {
       flex-direction: row;
+      width: 60%;
+      align-items: flex-start;
     }
+
     #img_header {
       height: 200px;
       width: 200px;
       object-fit: contain;
       margin: auto;
       margin-top: 10px;
+
       @media screen and (min-width: map-get($breakpoints, desktop)) {
         margin-left: 20px;
       }
-      #name {
-        display: flex;
-        flex-direction: column;
+    }
+
+    #name {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 20px;
+      align-items: center;
+
+      @media screen and (min-width: map-get($breakpoints, desktop)) {
         margin-left: 70px;
-        margin-top: 20px;
+        align-items: flex-start;
       }
     }
   }
