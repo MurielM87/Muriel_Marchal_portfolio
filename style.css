@@ -139,14 +139,12 @@ h5 {
 }
 
 .main-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0.5rem 0;
-  margin-top: 20px;
+  position: relative;
+  z-index: 10;
 }
 .main-nav .nav-list {
   display: flex;
@@ -157,6 +155,8 @@ h5 {
 }
 .main-nav .nav-list li {
   position: relative;
+  list-style: none;
+  line-height: 30px;
 }
 .main-nav .nav-list li a {
   color: white;
@@ -169,22 +169,16 @@ h5 {
   color: #23dbdb;
 }
 .main-nav .nav-list li .sub-menu {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #444;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
   flex-direction: column;
-  width: 200px;
 }
 .main-nav .nav-list li .sub-menu li a {
   padding: 0.5rem;
-  display: block;
   color: white;
-  background-color: #444;
 }
 .main-nav .nav-list li .sub-menu li a:hover {
   background-color: #555;
@@ -192,18 +186,14 @@ h5 {
 .main-nav .nav-list li:hover > .sub-menu {
   display: flex;
 }
-.main-nav .nav-list li .sub-sub-menu {
-  position: absolute;
+
+/* Classe qui rend la navbar fixe */
+.fixed-nav {
+  position: fixed;
   top: 0;
-  left: 100%;
-  background-color: #444;
-  display: none;
-}
-.main-nav .nav-list li .sub-sub-menu li a {
-  padding: 0.5rem;
-}
-.main-nav .nav-list li:hover > .sub-menu > li:hover > .sub-sub-menu {
-  display: flex;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 footer {

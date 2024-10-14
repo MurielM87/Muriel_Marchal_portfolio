@@ -1,12 +1,10 @@
 .main-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0.5rem 0;
-  margin-top: 20px; 
+  position: relative; 
+  z-index: 10;
 
   .nav-list {
     display: flex;
@@ -17,35 +15,34 @@
 
     li {
       position: relative;
+      list-style: none;
+      line-height: 30px;
+
       a {
         color: white;
         text-decoration: none;
         font-size: 1.2rem;
         padding: 0.5rem 1rem;
         transition: color 0.3s;
+
         &:hover {
           color: #23dbdb;
         }
       }
 
       .sub-menu {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
         background-color: #444;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: none;
         flex-direction: column;
-        width: 200px;
 
         li {
           a {
             padding: 0.5rem;
-            display: block;
             color: white;
-            background-color: #444;
+
             &:hover {
               background-color: #555;
             }
@@ -56,24 +53,15 @@
       &:hover > .sub-menu {
         display: flex;
       }
-
-      .sub-sub-menu {
-        position: absolute;
-        top: 0;
-        left: 100%;
-        background-color: #444;
-        display: none;
-
-        li {
-          a {
-            padding: 0.5rem;
-          }
-        }
-      }
-
-      &:hover > .sub-menu > li:hover > .sub-sub-menu {
-        display: flex;
-      }
     }
   }
+}
+
+/* Classe qui rend la navbar fixe */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
