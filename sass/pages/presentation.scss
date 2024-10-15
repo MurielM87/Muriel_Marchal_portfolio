@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 10px;
+  width: 90%;
 
   #mainName {
     display: flex;
@@ -15,6 +16,16 @@
     display: flex;
     flex-direction: column;
     font-size: 20px;
+
+    ul {
+      list-style:-webkit-radial-gradient(yellow, red);
+      line-height: 30px;
+      width: 90%;
+
+      #dispo {
+        color: #2b96e2;
+      }
+    }
   }
   #formation_oc i:hover {
     color: turquoise;
