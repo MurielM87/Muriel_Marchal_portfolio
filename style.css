@@ -105,14 +105,14 @@ h1 {
 
 h2 {
   font-family: "Zeyada", cursive;
-  font-size: 36px;
+  font-size: 50px;
   text-align: center;
   margin: 10px;
 }
 @media screen and (min-width: 1000px) {
   h2 {
     margin: 25px 50px;
-    width: 25%;
+    width: 35%;
     text-align: left;
   }
 }
@@ -210,7 +210,8 @@ footer {
   background: linear-gradient(217deg, rgba(46, 31, 157, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(10, 229, 222, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(169, 51, 248), rgba(0, 0, 255, 0) 70.71%);
   background-size: 400% 400%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   animation: changeColor 5s ease-in-out infinite;
 }
 @media screen and (min-width: 1000px) {
@@ -364,39 +365,6 @@ footer {
 #presentation #mainPresentation ul #dispo {
   color: #2b96e2;
 }
-#presentation #formation_oc i:hover {
-  color: turquoise;
-}
-#presentation #autres_formations {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 1000px) {
-  #presentation #autres_formations {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-#presentation #skilleos {
-  width: 100%;
-  text-align: center;
-}
-@media screen and (min-width: 1000px) {
-  #presentation #skilleos {
-    margin-right: 20px;
-    width: 35% px;
-  }
-}
-#presentation #autres_competences {
-  width: 100%;
-  line-height: 20px;
-}
-@media screen and (min-width: 1000px) {
-  #presentation #autres_competences {
-    width: 60%;
-    margin-left: 200px;
-  }
-}
 
 #technoList {
   display: flex;
@@ -441,6 +409,68 @@ footer {
   width: 50px;
   height: 50px;
   margin: 20px;
+}
+
+#formations ul {
+  margin-left: 50px;
+}
+#formations .title {
+  font-size: 25px;
+  margin: 20px;
+}
+#formations #poe .title {
+  color: red;
+}
+#formations #poe ul {
+  list-style: -moz-linear-gradient(turquoise, green);
+}
+#formations #formation_oc .title {
+  color: green;
+}
+#formations #formation_oc ul {
+  list-style: -moz-repeating-radial-gradient(violet, blue);
+}
+#formations #formation_oc ul i {
+  color: rgb(0, 132, 255);
+}
+#formations #formation_oc ul i:hover {
+  color: turquoise;
+}
+#formations #autres_formations {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  #formations #autres_formations {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#formations #autres_formations #skilleos {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  #formations #autres_formations #skilleos {
+    margin-right: 20px;
+    width: 35% px;
+  }
+}
+#formations #autres_formations #skilleos .title {
+  color: orange;
+}
+#formations #autres_formations #autres_competences {
+  width: 100%;
+  line-height: 20px;
+}
+@media screen and (min-width: 1000px) {
+  #formations #autres_formations #autres_competences {
+    width: 60%;
+    margin-left: 200px;
+  }
+}
+#formations #autres_formations #autres_competences .title {
+  color: lightseagreen;
 }
 
 h4 {

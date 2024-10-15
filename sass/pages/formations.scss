@@ -1,0 +1,71 @@
+#formations {
+    ul {
+        margin-left: 50px;
+    }
+    .title {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    #poe {
+        .title {
+            color: red;
+        }
+        ul {
+            list-style: -moz-linear-gradient(turquoise, green);
+        }
+        
+    }
+  #formation_oc {
+    .title {
+        color: green;
+    }
+    ul {
+        list-style: -moz-repeating-radial-gradient(violet, blue);
+
+
+        i {
+            color: rgb(0, 132, 255);
+            &:hover {
+                color: turquoise;
+            }
+        }
+    }
+    
+  }
+
+  #autres_formations {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #skilleos {
+        width: 100%;
+        text-align: center;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          margin-right: 20px;
+          width: 35%px;
+        }
+
+        .title {
+            color: orange;
+        }
+      }
+      #autres_competences {
+        width: 100%;
+        line-height: 20px;
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          width: 60%;
+          margin-left: 200px;
+        }
+
+        .title {
+            color: lightseagreen;
+        }
+      }
+  }
+  
+}

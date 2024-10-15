@@ -63,12 +63,12 @@ h1 {
 
 h2 {
   font-family: "Zeyada", cursive;
-  font-size: 36px;
+  font-size: 50px;
   text-align: center;
   margin: 10px;
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     margin: 25px 50px;
-    width: 25%;
+    width: 35%;
     text-align: left;
   }
 }

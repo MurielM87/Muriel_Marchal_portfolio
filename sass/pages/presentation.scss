@@ -27,32 +27,4 @@
       }
     }
   }
-  #formation_oc i:hover {
-    color: turquoise;
-  }
-
-  #autres_formations {
-    display: flex;
-    flex-direction: column;
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-  #skilleos {
-    width: 100%;
-    text-align: center;
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-      margin-right: 20px;
-      width: 35%px;
-    }
-  }
-  #autres_competences {
-    width: 100%;
-    line-height: 20px;
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-      width: 60%;
-      margin-left: 200px;
-    }
-  }
 }
