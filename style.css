@@ -259,69 +259,80 @@ footer {
   font-size: 15px;
 }
 
-#btn {
-  display: flex;
-  position: relative;
-  color: red;
-}
-
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-/* Modal Content */
-.modal-content {
+.modal .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 80%;
+  width: 70%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
-
-/* The Close Button */
-.close {
+.modal .modal-content .modal-header {
+  padding: 2px 16px;
+  color: white;
+}
+.modal .modal-content .modal-header .close {
   color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+.modal .modal-content .modal-header .close:hover, .modal .modal-content .modal-header .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
-
-.modal-header {
+.modal .modal-content .modal-body {
   padding: 2px 16px;
-  background-color: #5cb85c;
+}
+.modal .modal-content .modal-body .img_modal {
+  width: 90%;
+  object-fit: cover;
+  margin: 0 5%;
+}
+.modal .modal-content .modal-footer {
+  padding: 2px 16px;
   color: white;
 }
 
-.modal-body {
-  padding: 2px 16px;
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
-
 .skilleos_items {
   display: flex;
   flex-direction: row;
