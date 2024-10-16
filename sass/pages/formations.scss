@@ -1,86 +1,94 @@
 #formations {
-    ul {
-        margin-left: 50px;
+  ul {
+    margin-left: 50px;
 
-        li {
-            display: flex;
-            flex-direction: row;
+    li {
+      display: flex;
+      flex-direction: row;
 
-            i {
-                margin-left: 10px;
-            }
-        }
+      i {
+        margin-left: 10px;
+      }
     }
+  }
+  .title {
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  #poe {
     .title {
-        font-size: 25px;
-        margin: 20px;
+      color: rgb(251, 255, 0);
     }
-
-    #poe {
-        .title {
-            color: rgb(251, 255, 0);
-        }
-        ul {
-            list-style: -moz-linear-gradient(turquoise, green);
-        }
-        
+    ul {
+      list-style: -moz-linear-gradient(turquoise, green);
     }
+  }
   #formation_oc {
     .title {
-        color: rgb(33, 247, 9);
+      color: rgb(33, 247, 9);
     }
     ul {
-        list-style: -moz-repeating-radial-gradient(violet, blue);
+      list-style: -moz-repeating-radial-gradient(violet, blue);
 
-
-        i {
-            color: rgb(0, 132, 255);
-            &:hover {
-                color: turquoise;
-            }
+      i {
+        color: rgb(0, 132, 255);
+        &:hover {
+          color: turquoise;
         }
+      }
     }
-    
   }
 
   #autres_formations {
     display: flex;
     flex-direction: column;
     @media screen and (min-width: map-get($breakpoints, desktop)) {
-      flex-direction: row;
       justify-content: space-between;
     }
 
     #skilleos {
-        width: 100%;
-        text-align: center;
-        @media screen and (min-width: map-get($breakpoints, desktop)) {
-          margin-right: 20px;
-          width: 35%px;
-        }
-
-        .title {
-            color: orange;
-        }
-        ul {
-            list-style: -moz-linear-gradient(lightseagreen, red);
-        }
+      width: 100%;
+      text-align: center;
+      display: flex;
+      @media screen and (min-width: map-get($breakpoints, desktop)) {
+        text-align: left;
+        margin-right: 20px;
+        width: 35%;
       }
-      #autres_competences {
-        width: 100%;
-        line-height: 20px;
-        @media screen and (min-width: map-get($breakpoints, desktop)) {
-          width: 60%;
-          margin-left: 200px;
-        }
 
-        .title {
-            color: lightseagreen;
-        }
-        ul {
-            list-style: -webkit-linear-gradient(orange, green);
-        }
+      .title {
+        color: orange;
       }
+      i {
+        margin-top: 25px;
+      }
+      ul {
+        list-style: -moz-linear-gradient(lightseagreen, red);
+      }
+    }
+
+    #vueschool {
+      display: flex;
+      .title {
+        color: yellow;
+      }
+    }
+
+    #autres {
+      display: flex;
+      width: 100%;
+      line-height: 20px;
+      @media screen and (min-width: map-get($breakpoints, desktop)) {
+        margin-left: 20px;
+      }
+
+      .title {
+        color: lightseagreen;
+      }
+      ul {
+        list-style: -webkit-linear-gradient(orange, green);
+      }
+    }
   }
-  
 }

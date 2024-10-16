@@ -137,6 +137,30 @@ window.onclick = function(event) {
     modal7.style.display = "none";
   }
 }
+
+// Get the modal skilleos
+let modalSkilleos = document.getElementById("myModal_skilleos");
+
+// Get the button that opens the modal
+let btnSkilleos = document.getElementById("btn_skilleos");
+
+// Get the <span> element that closes the modal
+// let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btnSkilleos.onclick = function() {
+    modalSkilleos.style.display = "block";
+  }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalSkilleos.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalSkilleos) {
+    modalSkilleos.style.display = "none";
+  }
+}
 /*
 // Get the modal project 2 OCR
 let modal = document.getElementById("myModal");

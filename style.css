@@ -523,40 +523,50 @@ footer {
 }
 @media screen and (min-width: 1000px) {
   #formations #autres_formations {
-    flex-direction: row;
     justify-content: space-between;
   }
 }
 #formations #autres_formations #skilleos {
   width: 100%;
   text-align: center;
+  display: flex;
 }
 @media screen and (min-width: 1000px) {
   #formations #autres_formations #skilleos {
+    text-align: left;
     margin-right: 20px;
-    width: 35% px;
+    width: 35%;
   }
 }
 #formations #autres_formations #skilleos .title {
   color: orange;
 }
+#formations #autres_formations #skilleos i {
+  margin-top: 25px;
+}
 #formations #autres_formations #skilleos ul {
   list-style: -moz-linear-gradient(lightseagreen, red);
 }
-#formations #autres_formations #autres_competences {
+#formations #autres_formations #vueschool {
+  display: flex;
+}
+#formations #autres_formations #vueschool .title {
+  color: yellow;
+}
+#formations #autres_formations #autres {
+  display: flex;
   width: 100%;
   line-height: 20px;
 }
 @media screen and (min-width: 1000px) {
-  #formations #autres_formations #autres_competences {
-    width: 60%;
-    margin-left: 200px;
+  #formations #autres_formations #autres {
+    margin-left: 20px;
   }
 }
-#formations #autres_formations #autres_competences .title {
+#formations #autres_formations #autres .title {
   color: lightseagreen;
 }
-#formations #autres_formations #autres_competences ul {
+#formations #autres_formations #autres ul {
   list-style: -webkit-linear-gradient(orange, green);
 }
 
