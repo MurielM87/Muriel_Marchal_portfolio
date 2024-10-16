@@ -1,6 +1,15 @@
 #formations {
     ul {
         margin-left: 50px;
+
+        li {
+            display: flex;
+            flex-direction: row;
+
+            i {
+                margin-left: 10px;
+            }
+        }
     }
     .title {
         font-size: 25px;
@@ -9,7 +18,7 @@
 
     #poe {
         .title {
-            color: red;
+            color: rgb(251, 255, 0);
         }
         ul {
             list-style: -moz-linear-gradient(turquoise, green);
@@ -18,7 +27,7 @@
     }
   #formation_oc {
     .title {
-        color: green;
+        color: rgb(33, 247, 9);
     }
     ul {
         list-style: -moz-repeating-radial-gradient(violet, blue);
@@ -53,6 +62,9 @@
         .title {
             color: orange;
         }
+        ul {
+            list-style: -moz-linear-gradient(lightseagreen, red);
+        }
       }
       #autres_competences {
         width: 100%;
@@ -64,6 +76,9 @@
 
         .title {
             color: lightseagreen;
+        }
+        ul {
+            list-style: -webkit-linear-gradient(orange, green);
         }
       }
   }
