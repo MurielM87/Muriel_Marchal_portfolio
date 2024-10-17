@@ -499,20 +499,44 @@ footer {
   font-size: 25px;
   margin: 20px;
 }
-#formations #poe .title {
+#formations #poe {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+#formations #poe .title_info {
+  display: flex;
+}
+#formations #poe .title_info .title {
   color: rgb(251, 255, 0);
 }
-#formations #poe ul {
+#formations #poe .title_info i {
+  margin-top: 25px;
+}
+#formations #poe .title_info i:hover, #formations #poe .title_info i:focus {
+  color: rgb(251, 255, 0);
+}
+#formations #poe .title_info ul {
   list-style: -moz-linear-gradient(turquoise, green);
 }
-#formations #formation_oc .title {
+#formations #formation_oc .title_info {
+  display: flex;
+}
+#formations #formation_oc .title_info .title {
+  color: rgb(33, 247, 9);
+}
+#formations #formation_oc .title_info i {
+  margin-top: 25px;
+}
+#formations #formation_oc .title_info i:hover, #formations #formation_oc .title_info i:focus {
   color: rgb(33, 247, 9);
 }
 #formations #formation_oc ul {
-  list-style: -moz-repeating-radial-gradient(violet, blue);
+  line-height: 30px;
 }
 #formations #formation_oc ul li span {
   margin-right: 10px;
+  color: red;
 }
 #formations #formation_oc ul li i {
   color: rgb(0, 132, 255);
@@ -542,22 +566,25 @@ footer {
   }
 }
 #formations #autres_formations #skilleos .title {
-  color: orange;
+  color: rgb(251, 255, 0);
 }
 #formations #autres_formations #skilleos i {
   margin-top: 25px;
 }
-#formations #autres_formations #skilleos ul {
-  list-style: -moz-linear-gradient(lightseagreen, red);
+#formations #autres_formations #skilleos i:hover, #formations #autres_formations #skilleos i:focus {
+  color: rgb(251, 255, 0);
 }
 #formations #autres_formations #vueschool {
   display: flex;
 }
 #formations #autres_formations #vueschool .title {
-  color: yellow;
+  color: rgb(33, 247, 9);
 }
 #formations #autres_formations #vueschool i {
   margin-top: 25px;
+}
+#formations #autres_formations #vueschool i:hover, #formations #autres_formations #vueschool i:focus {
+  color: rgb(33, 247, 9);
 }
 #formations #autres_formations #autres {
   display: flex;
@@ -565,13 +592,13 @@ footer {
   line-height: 20px;
 }
 #formations #autres_formations #autres .title {
-  color: lightseagreen;
+  color: rgb(251, 255, 0);
 }
 #formations #autres_formations #autres i {
   margin-top: 25px;
 }
-#formations #autres_formations #autres ul {
-  list-style: -webkit-linear-gradient(orange, green);
+#formations #autres_formations #autres i:hover, #formations #autres_formations #autres i:focus {
+  color: rgb(251, 255, 0);
 }
 
 h4 {

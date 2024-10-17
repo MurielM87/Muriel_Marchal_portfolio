@@ -29,6 +29,8 @@ setupModal("myModal4", "btn4", "close");
 setupModal("myModal5", "btn5", "close");
 setupModal("myModal6", "btn6", "close");
 setupModal("myModal7", "btn7", "close");
+setupModal("myModal_poe", "btn_poe", "close");
+setupModal("myModal_ocr", "btn_ocr", "close");
 setupModal("myModal_skilleos", "btn_skilleos", "close");
 setupModal("myModal_vueschool", "btn_vueschool", "close");
 setupModal("myModal_autres", "btn_autres", "close");

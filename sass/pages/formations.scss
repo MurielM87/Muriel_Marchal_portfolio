@@ -17,23 +17,50 @@
   }
 
   #poe {
-    .title {
-      color: rgb(251, 255, 0);
-    }
-    ul {
-      list-style: -moz-linear-gradient(turquoise, green);
+    width: 100%;
+    text-align: center;
+    display: flex;
+
+    .title_info {
+      display: flex;
+
+      .title {
+        color: rgb(251, 255, 0);
+      }
+
+      i {
+        margin-top: 25px;
+        &:hover, &:focus {
+          color: rgb(251, 255, 0);
+        }
+      }
+      ul {
+        list-style: -moz-linear-gradient(turquoise, green);
+      }
     }
   }
   #formation_oc {
-    .title {
-      color: rgb(33, 247, 9);
+    .title_info {
+      display: flex;
+
+      .title {
+        color: rgb(33, 247, 9);
+      }
+      i {
+        margin-top: 25px;
+        &:hover, &:focus {
+          color: rgb(33, 247, 9);
+        }
+      }
     }
+
     ul {
-      list-style: -moz-repeating-radial-gradient(violet, blue);
+      line-height: 30px;
 
       li {
         span {
           margin-right: 10px;
+          color: red;
         }
 
         i {
@@ -64,23 +91,26 @@
       }
 
       .title {
-        color: orange;
+        color: rgb(251, 255, 0);
       }
       i {
         margin-top: 25px;
-      }
-      ul {
-        list-style: -moz-linear-gradient(lightseagreen, red);
+        &:hover, &:focus {
+          color: rgb(251, 255, 0);
+        }
       }
     }
 
     #vueschool {
       display: flex;
       .title {
-        color: yellow;
+        color:  rgb(33, 247, 9);
       }
       i {
         margin-top: 25px;
+        &:hover, &:focus {
+          color: rgb(33, 247, 9);
+        }
       }
     }
 
@@ -93,13 +123,13 @@
       // }
 
       .title {
-        color: lightseagreen;
+        color: rgb(251, 255, 0);
       }
       i {
         margin-top: 25px;
-      }
-      ul {
-        list-style: -webkit-linear-gradient(orange, green);
+        &:hover, &:focus {
+          color: rgb(251, 255, 0);
+        }
       }
     }
   }
