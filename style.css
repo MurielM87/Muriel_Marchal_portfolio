@@ -503,6 +503,7 @@ footer {
   width: 100%;
   text-align: center;
   display: flex;
+  flex-direction: column;
 }
 #formations #poe .title_info {
   display: flex;
@@ -516,8 +517,8 @@ footer {
 #formations #poe .title_info i:hover, #formations #poe .title_info i:focus {
   color: rgb(251, 255, 0);
 }
-#formations #poe .title_info ul {
-  list-style: -moz-linear-gradient(turquoise, green);
+#formations #poe ul {
+  line-height: 35px;
 }
 #formations #formation_oc .title_info {
   display: flex;

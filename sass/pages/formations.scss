@@ -20,6 +20,7 @@
     width: 100%;
     text-align: center;
     display: flex;
+    flex-direction: column;
 
     .title_info {
       display: flex;
@@ -30,13 +31,14 @@
 
       i {
         margin-top: 25px;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: rgb(251, 255, 0);
         }
       }
-      ul {
-        list-style: -moz-linear-gradient(turquoise, green);
-      }
+    }
+    ul {
+      line-height: 35px;
     }
   }
   #formation_oc {
@@ -48,7 +50,8 @@
       }
       i {
         margin-top: 25px;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: rgb(33, 247, 9);
         }
       }
@@ -95,7 +98,8 @@
       }
       i {
         margin-top: 25px;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: rgb(251, 255, 0);
         }
       }
@@ -104,11 +108,12 @@
     #vueschool {
       display: flex;
       .title {
-        color:  rgb(33, 247, 9);
+        color: rgb(33, 247, 9);
       }
       i {
         margin-top: 25px;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: rgb(33, 247, 9);
         }
       }
@@ -127,7 +132,8 @@
       }
       i {
         margin-top: 25px;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: rgb(251, 255, 0);
         }
       }
