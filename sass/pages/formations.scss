@@ -31,10 +31,16 @@
     ul {
       list-style: -moz-repeating-radial-gradient(violet, blue);
 
-      i {
-        color: rgb(0, 132, 255);
-        &:hover {
-          color: turquoise;
+      li {
+        span {
+          margin-right: 10px;
+        }
+
+        i {
+          color: rgb(0, 132, 255);
+          &:hover {
+            color: turquoise;
+          }
         }
       }
     }
@@ -73,18 +79,24 @@
       .title {
         color: yellow;
       }
+      i {
+        margin-top: 25px;
+      }
     }
 
     #autres {
       display: flex;
       width: 100%;
       line-height: 20px;
-      @media screen and (min-width: map-get($breakpoints, desktop)) {
-        margin-left: 20px;
-      }
+      // @media screen and (min-width: map-get($breakpoints, desktop)) {
+      //   margin-left: 20px;
+      // }
 
       .title {
         color: lightseagreen;
+      }
+      i {
+        margin-top: 25px;
       }
       ul {
         list-style: -webkit-linear-gradient(orange, green);

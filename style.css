@@ -511,10 +511,13 @@ footer {
 #formations #formation_oc ul {
   list-style: -moz-repeating-radial-gradient(violet, blue);
 }
-#formations #formation_oc ul i {
+#formations #formation_oc ul li span {
+  margin-right: 10px;
+}
+#formations #formation_oc ul li i {
   color: rgb(0, 132, 255);
 }
-#formations #formation_oc ul i:hover {
+#formations #formation_oc ul li i:hover {
   color: turquoise;
 }
 #formations #autres_formations {
@@ -553,18 +556,19 @@ footer {
 #formations #autres_formations #vueschool .title {
   color: yellow;
 }
+#formations #autres_formations #vueschool i {
+  margin-top: 25px;
+}
 #formations #autres_formations #autres {
   display: flex;
   width: 100%;
   line-height: 20px;
 }
-@media screen and (min-width: 1000px) {
-  #formations #autres_formations #autres {
-    margin-left: 20px;
-  }
-}
 #formations #autres_formations #autres .title {
   color: lightseagreen;
+}
+#formations #autres_formations #autres i {
+  margin-top: 25px;
 }
 #formations #autres_formations #autres ul {
   list-style: -webkit-linear-gradient(orange, green);
