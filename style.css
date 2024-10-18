@@ -494,6 +494,10 @@ footer {
 }
 #formations ul li i {
   margin-left: 10px;
+  cursor: pointer;
+}
+#formations ul li i:hover {
+  color: aquamarine;
 }
 #formations .title {
   font-size: 25px;
@@ -513,6 +517,7 @@ footer {
 }
 #formations #poe .title_info i {
   margin-top: 25px;
+  cursor: pointer;
 }
 #formations #poe .title_info i:hover, #formations #poe .title_info i:focus {
   color: rgb(251, 255, 0);
@@ -527,6 +532,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+  cursor: pointer;
 }
 #formations #formation_oc .title_info {
   display: flex;
@@ -564,6 +570,7 @@ footer {
 }
 #formations #formation_oc .modal-content ul li i {
   color: rgb(0, 132, 255);
+  cursor: pointer;
 }
 #formations #formation_oc .modal-content ul li i:hover {
   color: turquoise;
@@ -594,6 +601,7 @@ footer {
 }
 #formations #autres_formations #skilleos i {
   margin-top: 25px;
+  cursor: pointer;
 }
 #formations #autres_formations #skilleos i:hover, #formations #autres_formations #skilleos i:focus {
   color: rgb(251, 255, 0);
@@ -605,9 +613,11 @@ footer {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+  cursor: pointer;
 }
 #formations #autres_formations #skilleos .modal-content .skilleos_design .skilleos_items .fa-info-circle {
   margin: 0;
+  cursor: pointer;
 }
 #formations #autres_formations #skilleos .modal-content .skilleos_design .skilleos_items .tooltiptext ul {
   line-height: 30px;
@@ -626,6 +636,7 @@ footer {
 }
 #formations #autres_formations #vueschool i {
   margin-top: 25px;
+  cursor: pointer;
 }
 #formations #autres_formations #vueschool i:hover, #formations #autres_formations #vueschool i:focus {
   color: rgb(33, 247, 9);
@@ -637,6 +648,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+  cursor: pointer;
 }
 #formations #autres_formations #autres {
   display: flex;
@@ -648,6 +660,7 @@ footer {
 }
 #formations #autres_formations #autres i {
   margin-top: 25px;
+  cursor: pointer;
 }
 #formations #autres_formations #autres i:hover, #formations #autres_formations #autres i:focus {
   color: rgb(251, 255, 0);
@@ -659,46 +672,63 @@ footer {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+  cursor: _oo;
 }
 
 h4 {
-  text-align: left;
+  text-align: center;
   margin-left: 20px;
   margin-bottom: 20px;
 }
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: auto;
 }
-
-.swiper-slide {
-  font-size: 18px;
-  border: 2px solid turquoise;
-  margin: 10px;
-  border-radius: 20px;
-}
-
-.swiper-slide img {
-  display: block;
+.swiper .swiper-slide {
   width: 100%;
-  height: 200px;
-  object-fit: fill;
-}
-
-.btn_code {
-  text-align: center;
+  max-width: 400px;
   margin: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  background-color: #f9f9f9;
 }
-
-.project_description {
-  font-size: 20px;
-  padding-left: 5px;
+.swiper .swiper-slide img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
-
-button {
+.swiper .swiper-slide .btn_code {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.swiper .swiper-slide .btn_code button {
   margin: 5px;
-  padding: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: turquoise;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.swiper .swiper-slide .btn_code button a {
+  color: white;
+  text-decoration: none;
+}
+.swiper .swiper-slide .btn_code button:hover {
+  background-color: darkturquoise;
+}
+.swiper .swiper-slide .description {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+}
+.swiper .swiper-slide .project_description {
+  font-size: 16px;
+  color: #fff;
 }
 
 #languages {

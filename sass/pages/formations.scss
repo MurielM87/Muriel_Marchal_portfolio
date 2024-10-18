@@ -8,6 +8,10 @@
 
       i {
         margin-left: 10px;
+        cursor: pointer;
+        &:hover {
+          color:aquamarine;
+        }
       }
     }
   }
@@ -31,6 +35,7 @@
 
       i {
         margin-top: 25px;
+        cursor: pointer;
         &:hover,
         &:focus {
           color: rgb(251, 255, 0);
@@ -46,6 +51,7 @@
         display: flex;
         justify-content: flex-end;
         margin-right: 10px;
+        cursor: pointer;
       }
     }
   }
@@ -93,6 +99,7 @@
 
           i {
             color: rgb(0, 132, 255);
+            cursor: pointer;
             &:hover {
               color: turquoise;
             }
@@ -124,6 +131,7 @@
       }
       i {
         margin-top: 25px;
+        cursor: pointer;
         &:hover,
         &:focus {
           color: rgb(251, 255, 0);
@@ -136,11 +144,13 @@
           display: flex;
           justify-content: flex-end;
           margin-right: 10px;
+          cursor: pointer;
         }
         .skilleos_design {
           .skilleos_items {
             .fa-info-circle {
               margin: 0;
+              cursor: pointer;
             }
             .tooltiptext {
               ul {
@@ -167,6 +177,7 @@
       }
       i {
         margin-top: 25px;
+        cursor: pointer;
         &:hover,
         &:focus {
           color: rgb(33, 247, 9);
@@ -178,6 +189,7 @@
           display: flex;
           justify-content: flex-end;
           margin-right: 10px;
+          cursor: pointer;
         }
       }
     }
@@ -195,6 +207,7 @@
       }
       i {
         margin-top: 25px;
+        cursor: pointer;
         &:hover,
         &:focus {
           color: rgb(251, 255, 0);
@@ -206,6 +219,7 @@
           display: flex;
           justify-content: flex-end;
           margin-right: 10px;
+          cursor: _oo;
         }
       }
     }
