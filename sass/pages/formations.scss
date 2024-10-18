@@ -40,6 +40,14 @@
     ul {
       line-height: 35px;
     }
+    .modal-content {
+      background-color: #000;
+      .close {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+      }
+    }
   }
   #formation_oc {
     .title_info {
@@ -56,20 +64,38 @@
         }
       }
     }
-
     ul {
-      line-height: 30px;
-
       li {
+        display: flex;
+        align-items: center;
         span {
           margin-right: 10px;
-          color: red;
         }
+      }
+    }
 
-        i {
-          color: rgb(0, 132, 255);
-          &:hover {
-            color: turquoise;
+    .modal-content {
+      background-color: #000;
+      .close {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+      }
+
+      ul {
+        line-height: 30px;
+
+        li {
+          span {
+            margin-right: 10px;
+            color: red;
+          }
+
+          i {
+            color: rgb(0, 132, 255);
+            &:hover {
+              color: turquoise;
+            }
           }
         }
       }
@@ -103,6 +129,35 @@
           color: rgb(251, 255, 0);
         }
       }
+
+      .modal-content {
+        background-color: #000;
+        .close {
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 10px;
+        }
+        .skilleos_design {
+          .skilleos_items {
+            .fa-info-circle {
+              margin: 0;
+            }
+            .tooltiptext {
+              ul {
+                line-height: 30px;
+
+                li {
+                  width: 400px;
+
+                  .tooltip_title {
+                    width: 120px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     #vueschool {
@@ -115,6 +170,14 @@
         &:hover,
         &:focus {
           color: rgb(33, 247, 9);
+        }
+      }
+      .modal-content {
+        background-color: #000;
+        .close {
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 10px;
         }
       }
     }
@@ -135,6 +198,14 @@
         &:hover,
         &:focus {
           color: rgb(251, 255, 0);
+        }
+      }
+      .modal-content {
+        background-color: #000;
+        .close {
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 10px;
         }
       }
     }
