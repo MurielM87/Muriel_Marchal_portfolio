@@ -19,11 +19,16 @@
     }
 
     #img_header {
-      height: 200px;
-      width: 200px;
-      object-fit: contain;
-      margin: auto;
-      margin-top: 10px;
+      display: none;
+      @media screen and (min-width: map-get($breakpoints, desktop)){
+        display: flex;
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+        margin: auto;
+        margin-top: 10px;
+      }
+      
 
       @media screen and (min-width: map-get($breakpoints, desktop)) {
         margin-left: 20px;
@@ -63,10 +68,11 @@ h1 {
 
 h2 {
   font-family: "Zeyada", cursive;
-  font-size: 50px;
+  font-size: 35px;
   text-align: center;
   margin: 10px;
   @media screen and (min-width: map-get($breakpoints, desktop)) {
+    font-size: 50px;
     margin: 25px 50px;
     width: 35%;
     text-align: left;
@@ -80,10 +86,13 @@ h3 {
   color: rgb(64, 179, 224);
 }
 h4 {
-  font-size: 26px;
+  font-size: 16px;
   text-align: center;
   color: rgb(30, 179, 164);
   white-space: normal;
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    font-size: 26px;
+  }
 }
 h5 {
   font-size: 25px;

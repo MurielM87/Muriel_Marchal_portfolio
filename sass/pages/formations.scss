@@ -1,6 +1,10 @@
 #formations {
   ul {
-    margin-left: 50px;
+    margin-left: 10px;
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      margin-left: 50px;
+    }
 
     li {
       display: flex;
@@ -10,14 +14,18 @@
         margin-left: 10px;
         cursor: pointer;
         &:hover {
-          color:aquamarine;
+          color: aquamarine;
         }
       }
     }
   }
   .title {
-    font-size: 25px;
-    margin: 20px;
+    font-size: 14px;
+    margin: 10px;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      margin: 20px;
+      font-size: 25px;
+    }
   }
 
   #poe {
@@ -34,11 +42,14 @@
       }
 
       i {
-        margin-top: 25px;
+        margin-top: 10px;
         cursor: pointer;
         &:hover,
         &:focus {
           color: rgb(251, 255, 0);
+        }
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          margin-top: 25px;
         }
       }
     }
@@ -63,10 +74,13 @@
         color: rgb(33, 247, 9);
       }
       i {
-        margin-top: 25px;
+        margin-top: 10px;
         &:hover,
         &:focus {
           color: rgb(33, 247, 9);
+        }
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          margin-top: 25px;
         }
       }
     }
@@ -130,11 +144,14 @@
         color: rgb(251, 255, 0);
       }
       i {
-        margin-top: 25px;
+        margin-top: 10px;
         cursor: pointer;
         &:hover,
         &:focus {
           color: rgb(251, 255, 0);
+        }
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          margin-top: 25px;
         }
       }
 
@@ -176,11 +193,14 @@
         color: rgb(33, 247, 9);
       }
       i {
-        margin-top: 25px;
+        margin-top: 10px;
         cursor: pointer;
         &:hover,
         &:focus {
           color: rgb(33, 247, 9);
+        }
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          margin-top: 25px;
         }
       }
       .modal-content {
@@ -198,19 +218,19 @@
       display: flex;
       width: 100%;
       line-height: 20px;
-      // @media screen and (min-width: map-get($breakpoints, desktop)) {
-      //   margin-left: 20px;
-      // }
 
       .title {
         color: rgb(251, 255, 0);
       }
       i {
-        margin-top: 25px;
+        margin-top: 10px;
         cursor: pointer;
         &:hover,
         &:focus {
           color: rgb(251, 255, 0);
+        }
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          margin-top: 25px;
         }
       }
       .modal-content {
@@ -219,7 +239,7 @@
           display: flex;
           justify-content: flex-end;
           margin-right: 10px;
-          cursor: _oo;
+          cursor: pointer;
         }
       }
     }
