@@ -542,10 +542,11 @@ footer {
   }
 }
 #technoList #category ul {
-  width: 80vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #technoList #category ul li {
   display: flex;
@@ -876,6 +877,7 @@ h4 {
   width: 30px;
   height: 30px;
   margin-top: 20px;
+  margin-bottom: 10px;
   border-radius: 50%;
 }
 @media screen and (min-width: 1000px) {
@@ -1082,6 +1084,7 @@ h4 {
 
 #languages .languageList .imgLanguage {
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 #languages .languageList .imgLanguage:hover {
   transform: scale(1.5);
