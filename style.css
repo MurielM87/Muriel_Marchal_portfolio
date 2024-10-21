@@ -164,12 +164,55 @@ h5 {
   position: relative;
   z-index: 10;
 }
+.main-nav .hamburger {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+@media screen and (min-width: 1000px) {
+  .main-nav .hamburger {
+    display: none;
+  }
+}
+.main-nav .hamburger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+.main-nav .hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 9px);
+}
+.main-nav .hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.main-nav .hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 .main-nav .nav-list {
-  display: flex;
+  display: none;
   list-style: none;
   gap: 2rem;
   padding: 0;
   margin: 0;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .main-nav .nav-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+  }
 }
 .main-nav .nav-list li {
   position: relative;
@@ -180,8 +223,13 @@ h5 {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  padding: 0.5rem 4rem;
+  padding: 1rem;
   transition: color 0.3s;
+}
+@media screen and (min-width: 1000px) {
+  .main-nav .nav-list li a {
+    padding: 0.5rem 4rem;
+  }
 }
 .main-nav .nav-list li a:hover {
   color: #23dbdb;
@@ -201,7 +249,12 @@ h5 {
 .main-nav .nav-list li .sub-menu li a:hover {
   background-color: #555;
 }
-.main-nav .nav-list li:hover > .sub-menu {
+@media screen and (min-width: 1000px) {
+  .main-nav .nav-list lihover > .sub-menu {
+    display: flex;
+  }
+}
+.main-nav.open-menu .nav-list {
   display: flex;
 }
 

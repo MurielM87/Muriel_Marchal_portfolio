@@ -16,3 +16,5 @@ function fixNavbar() {
 
 // Ajoutez un écouteur d'événement de scroll pour exécuter la fonction fixNavbar
 window.addEventListener('scroll', fixNavbar);
+
+
