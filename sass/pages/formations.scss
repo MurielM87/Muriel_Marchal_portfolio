@@ -85,11 +85,16 @@
       }
     }
     ul {
+      line-height: 25px;;
       li {
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
         span {
           margin-right: 10px;
+        }
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+          margin-bottom: 0;
         }
       }
     }

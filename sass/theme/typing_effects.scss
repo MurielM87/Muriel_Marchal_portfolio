@@ -1,7 +1,10 @@
 .typing {
     overflow: hidden;
-    white-space: nowrap;
-    animation: typing 5s steps(22) 1s infinite alternate;
+    white-space: wrap;
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        white-space: nowrap;
+        animation: typing 5s steps(22) 1s infinite alternate;
+    }
 }
 
 @keyframes typing {

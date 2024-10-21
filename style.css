@@ -32,8 +32,13 @@ div {
 }
 
 span {
-  font-size: 23px;
+  font-size: 15px;
   font-weight: 900;
+}
+@media screen and (min-width: 1000px) {
+  span {
+    font-size: 23px;
+  }
 }
 
 #header_container {
@@ -104,6 +109,7 @@ span {
 }
 
 h1 {
+  text-align: center;
   font-size: 40px;
   font-family: "Dancing", Arial, Helvetica, sans-serif;
   margin-top: 40px;
@@ -449,6 +455,7 @@ footer {
   list-style: -webkit-radial-gradient(yellow, red);
   line-height: 30px;
   width: 90%;
+  margin-left: 10px;
 }
 #presentation #mainPresentation ul #dispo {
   color: #2b96e2;
@@ -581,12 +588,21 @@ footer {
     margin-top: 25px;
   }
 }
+#formations #formation_oc ul {
+  line-height: 25px;
+}
 #formations #formation_oc ul li {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 #formations #formation_oc ul li span {
   margin-right: 10px;
+}
+@media screen and (min-width: 1000px) {
+  #formations #formation_oc ul li {
+    margin-bottom: 0;
+  }
 }
 #formations #formation_oc .modal-content {
   background-color: #000;
@@ -1030,8 +1046,13 @@ h4 {
 }
 .typing {
   overflow: hidden;
-  white-space: nowrap;
-  animation: typing 5s steps(22) 1s infinite alternate;
+  white-space: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .typing {
+    white-space: nowrap;
+    animation: typing 5s steps(22) 1s infinite alternate;
+  }
 }
 
 @keyframes typing {
