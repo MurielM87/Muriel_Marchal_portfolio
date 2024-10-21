@@ -812,6 +812,7 @@ h4 {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  width: 75px;
 }
 @media screen and (min-width: 1000px) {
   #languages .languageList {
@@ -846,6 +847,7 @@ h4 {
   text-align: center;
   margin-top: 10px;
   margin-left: 10px;
+  margin-bottom: 14px;
   width: 75px;
 }
 @media screen and (min-width: 1000px) {
