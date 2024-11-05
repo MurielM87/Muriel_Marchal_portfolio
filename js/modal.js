@@ -37,6 +37,8 @@ setupModal("myModal6", "btn6", "close");   // Setup pour le projet API Sauces Pi
 setupModal("myModal7", "btn7", "close");   // Setup pour le projet Groupomania
 setupModal("myModal_poe", "btn_poe", "close"); // Setup pour la formation POE
 setupModal("myModal_poe1", "btn_poe1", "close"); // Setup pour le projet Spring-Boot Pokemons
+setupModal("myModal_poe2", "btn_poe2", "close"); //Setup pour le projet Angular CRM
+setupModal("myModal_poe3", "btn_poe3", "close"); //Setup pour le projet Bootstrap
 setupModal("myModal_ocr", "btn_ocr", "close");  // Setup pour la formation OpenClassroom
 setupModal("myModal_skilleos", "btn_skilleos", "close"); // Setup pour la formation Skilleos
 setupModal("myModal_vueschool", "btn_vueschool", "close"); // Setup pour la formation VueSchool
