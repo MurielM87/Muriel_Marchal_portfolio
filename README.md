@@ -1,1 +1,1 @@
-![Alt text](assets/portfolio.png)
+![Alt text](assets/portfolio-fullstack.png)
